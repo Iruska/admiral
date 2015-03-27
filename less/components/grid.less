@@ -1,0 +1,40 @@
+@column-horizontal-padding: 30px;
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+	.col-@{i} {
+		width: ((@i * 100%) / @n);
+		float: left;
+		padding: 0 @column-horizontal-padding;
+	}
+	.generate-columns(@n, (@i + 1));
+}
+
+// Вызываем примесь
+.generate-columns(12);
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*=col-] .row [class*=col-]:first-child:last-child {
+	margin-right: @column-horizontal-padding * (-1);
+}
+
+[class*=col-] .row [class*=col-]:first-child:last-child {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+[class*=col-] .row (([class*=col-]:not:first-child):not):last-child {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.pull-left { float: left;  }
+.pull-right{ float: right; }
