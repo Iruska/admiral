@@ -1,0 +1,36 @@
+/* ---------------------------
+	Главная навигация на сайте
+   --------------------------- */
+.page-header{
+	padding: 7px 0;
+	min-width: 1200px;
+	background: @main-color;
+
+	&__btn{
+		float: right;
+		text-align: right;
+	}
+
+}
+
+.main-nav{
+	padding: 4px 0;
+
+	&__link{
+		font-weight: 400;
+		margin-right: 24px;
+		display: inline-block;
+		vertical-align: top;
+		text-decoration: none;
+		.transition(0.2s);
+		
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover{
+			color: @orange-color;
+		}
+	}
+
+}

@@ -1,0 +1,253 @@
+/* --------------------
+	Переменные цветов
+   -------------------- */
+.col-1 {
+  width: 8.33333333%;
+  float: left;
+  padding: 0 0px;
+}
+.col-2 {
+  width: 16.66666667%;
+  float: left;
+  padding: 0 0px;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+  padding: 0 0px;
+}
+.col-4 {
+  width: 33.33333333%;
+  float: left;
+  padding: 0 0px;
+}
+.col-5 {
+  width: 41.66666667%;
+  float: left;
+  padding: 0 0px;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+  padding: 0 0px;
+}
+.col-7 {
+  width: 58.33333333%;
+  float: left;
+  padding: 0 0px;
+}
+.col-8 {
+  width: 66.66666667%;
+  float: left;
+  padding: 0 0px;
+}
+.col-9 {
+  width: 75%;
+  float: left;
+  padding: 0 0px;
+}
+.col-10 {
+  width: 83.33333333%;
+  float: left;
+  padding: 0 0px;
+}
+.col-11 {
+  width: 91.66666667%;
+  float: left;
+  padding: 0 0px;
+}
+.col-12 {
+  width: 100%;
+  float: left;
+  padding: 0 0px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*=col-] .row [class*=col-]:first-child:last-child {
+  margin-right: 0px;
+}
+[class*=col-] .row [class*=col-]:first-child:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+[class*=col-] .row (([class*=col-]:not:first-child):not):last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+/* ----------------------------
+   Подключение шрифтов
+------------------------------- */
+a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+.owl-prev,
+.owl-next {
+  font-size: 0;
+  width: 20px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../../img/slider-arrows.png) no-repeat;
+}
+.owl-prev {
+  left: -30px;
+}
+.owl-prev:hover {
+  background-position: -54px 0;
+}
+.owl-next {
+  right: -30px;
+  background-position: -24px 0;
+}
+.owl-next:hover {
+  background-position: -78px 0;
+}
+/* --------------------
+	Стили для кнопок
+   -------------------- */
+.btn-order {
+  padding: 2px 0;
+  min-width: 170px;
+  font-weight: 700;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #fff;
+  transition: 0.2s linear all;
+}
+.btn-order:hover {
+  color: #ff9900;
+  background-color: #fff;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  outline: none;
+}
+fieldset {
+  border: none;
+}
+/* ---------------------------
+	Главная навигация на сайте
+   --------------------------- */
+.page-header {
+  padding: 7px 0;
+  min-width: 1200px;
+  background: #006e7b;
+}
+.page-header__btn {
+  float: right;
+  text-align: right;
+}
+.main-nav {
+  padding: 4px 0;
+}
+.main-nav__link {
+  font-weight: 400;
+  margin-right: 24px;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: 0.2s linear all;
+}
+.main-nav__link:last-child {
+  margin-right: 0;
+}
+.main-nav__link:hover {
+  color: #ff9900;
+}
