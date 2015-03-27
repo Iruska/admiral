@@ -2,6 +2,7 @@
 	Стили для кнопок
    -------------------- */
 
+/* Кнопка заказа теплохода */ 
 .btn-order{
 	padding: 2px 0;
 	min-width: 170px;
@@ -18,4 +19,49 @@
 		background-color: #fff;
 	}
 
+	&:active{ color: darken(@orange-color, 5%); }
+
 }
+
+/* Ссылка заказать звонок */ 
+.call-link{
+	font-weight: 300;
+	line-height: 20px;
+	vertical-align: top;
+	display: inline-block;
+	transition: 0.2s ease border-color;
+	border-bottom: 2px solid #fff;
+
+	&:hover{ border-color: transparent; }
+
+}
+
+/* Главная большая ссылка */ 
+
+.btn{
+	width: 635px;
+	margin: 0 auto;
+	display: block;
+	padding: 21px 10px;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;	
+	border-radius: 6px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	background-color: @main-color;
+	.transition(0.2s);
+	
+	/* Позиционирование кнопки */ 
+	&--absolute{
+		position: absolute;
+		left: 0; right: 0;
+		bottom: -39px;
+		margin: auto;
+	}
+
+	&:hover{ background-color: lighten(@main-color, 5%); }
+
+	&:active{ background-color: darken(@main-color, 5%); }
+	
+}
+

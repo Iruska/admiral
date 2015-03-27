@@ -15,7 +15,65 @@ li{
 	list-style: none;
 }
 
+/* --------------------
+	Промо блок с лого
+   -------------------- */
 
-/* ----------------------------
-   HEADER - верхнее меню
-   ---------------------------- */ 
+.logo{
+	width: 180px;
+	display: inline-block;
+	vertical-align: middle;
+	img{
+		width: 180px;
+	}
+}
+
+.promo{
+	padding: 17px 0;
+	min-height: 545px;
+	min-width: 1200px;
+	border-bottom: 4px solid @main-color;
+	background: #adb4b8 url(../../img/bg-promo.jpg) no-repeat;
+	background-position: 70% 50%;
+	background-size: cover;
+	position: relative;
+
+	.logo{ margin-right: 12px; }
+
+	&__title{
+		float: left;
+		width: 600px;
+	}
+
+	.main-title{
+		width: 380px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.contacts{
+	width: 260px;
+	float: right;
+	padding-top: 12px;
+	text-align: right;
+
+	&__number{
+		margin: 0;
+		color: #fff;
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 31px;
+		span{ font-weight: 100; }
+	}
+
+	.call-link{ margin-top: 8px; }
+}
+
+
+
+
+
+
+
+

@@ -24,13 +24,12 @@
 		text-decoration: none;
 		.transition(0.2s);
 		
-		&:last-child{
-			margin-right: 0;
-		}
+		&:last-child{ margin-right: 0; }
 
-		&:hover{
-			color: @orange-color;
-		}
+		&:hover{ color: @orange-color; }
+
+		&:active{ color: darken(@orange-color, 10%); }
+		
 	}
 
 }
