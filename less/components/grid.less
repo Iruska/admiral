@@ -1,10 +1,10 @@
-@column-horizontal-padding: 0px;
+// @column-horizontal-padding: 0px;
 
 .generate-columns(@n, @i: 1) when (@i =< @n) {
 	.col-@{i} {
 		width: ((@i * 100%) / @n);
 		float: left;
-		padding: 0 @column-horizontal-padding;
+		// padding: 0 @column-horizontal-padding;
 	}
 	.generate-columns(@n, (@i + 1));
 }
@@ -13,7 +13,8 @@
 .generate-columns(12);
 
 .container {
-	max-width: 1200px;
+	max-width: 1220px;
+	padding: 0 10px;
 	margin: 0 auto;
 }
 .row:after {
@@ -23,7 +24,7 @@
 }
 
 [class*=col-] .row [class*=col-]:first-child:last-child {
-	margin-right: @column-horizontal-padding * (-1);
+	// margin-right: @column-horizontal-padding * (-1);
 }
 
 [class*=col-] .row [class*=col-]:first-child:last-child {

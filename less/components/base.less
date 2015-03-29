@@ -30,10 +30,10 @@ li{
 
 .promo{
 	padding: 17px 0;
-	min-height: 545px;
+	min-height: 550px;
 	min-width: 1200px;
 	border-bottom: 4px solid @main-color;
-	background: #adb4b8 url(../../img/bg-promo.jpg) no-repeat;
+	background: #adb4b8 url(../img/bg-promo.jpg) no-repeat;
 	background-position: 70% 50%;
 	background-size: cover;
 	position: relative;
@@ -55,7 +55,7 @@ li{
 .contacts{
 	width: 260px;
 	float: right;
-	padding-top: 12px;
+	padding-top: 14px;
 	text-align: right;
 
 	&__number{
@@ -67,13 +67,427 @@ li{
 		span{ font-weight: 100; }
 	}
 
-	.call-link{ margin-top: 8px; }
+	.call-link{ margin-top: 3px; }
+}
+
+
+/* --------------------
+	Блок услуг
+   -------------------- */
+
+.services{
+	padding: 40px 0 20px;
+	text-align: center;
+    min-width: 1200px;
+
+	&__title{
+		color: @orange-color;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 38px;
+		margin-bottom: 46px;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	
+	&__text{
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        &--big{
+            font-size: 24px;
+            line-height: 26px;
+            margin-top: 50px;
+        }
+
+        &--grey{
+            color: @grey-color;
+            padding: 0 40px;
+        }
+    }
+
+    &__block{
+        width: 835px;
+        margin: 0 auto 35px;
+    }
+
+	&__item{
+        padding: 0 10px;
+        position: relative;
+
+        &:before{
+            content: "";
+            width: 35px;
+            height: 35px;
+            display: block;
+            position: absolute;
+            right: -20px;
+            top: 45px;
+            background: url(../img/plus-icon.png) no-repeat;
+        }
+
+        &:last-child:before{ display: none; }
+
+        &__img{
+            height: 92px;
+            img{ max-width: 130px; }
+        }
+
+        &__head{
+            color: @main-color;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 18px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+    }
+}
+
+
+/* ------------------------------
+    Стили для блока с фотографией
+   ------------------------------ */
+
+.photo{
+    min-height: 600px;
+    min-width: 1200px;
+
+    .container{ 
+        position: relative; 
+        min-height: 600px;
+    }
+
+    &__title{
+        text-align: right;
+        position: absolute;
+    }
+
+    &__title--bottom{ bottom: 15px; right: 0; }
+    &__title--top{ top: 40px; right: 0; }
+
+    &--bg2{
+        background: #89a3bc url(../img/bg-2.jpg) no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    &--bg3{
+        background: #023274 url(../img/bg-3.jpg) no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    &--bg4{
+        background: #7fa2ca url(../img/bg-4.jpg) no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+
+/* --------------------
+    Как мы работаем
+   -------------------- */
+
+.working{
+    min-width: 1200px;
+    padding: 0 0 25px;
+    text-align: center;
+
+    &__title{
+        color: @orange-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    &__text{
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        &--wrapper{
+            width: 70%;
+            margin: 35px auto 70px;
+        }
+
+        &--grey{
+            color: @grey-color;
+        }
+    }
+
+}
+
+.process{
+    text-align: center;
+    margin-bottom: 30px;
+
+    .col-3{
+        width: 20%;
+        padding: 0 20px;
+    }
+
+    &__item{
+        position: relative;
+
+        &__img{ height: 110px; }
+
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 22px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        &:before{
+            content: "";
+            width: 41px;
+            height: 41px;
+            display: block;
+            position: absolute;
+            right: -18px;
+            top: 54px;
+            background: url(../img/arrow-icon.png) no-repeat;
+        }
+
+        &:last-child:before{ display: none; }
+    
+    }
+}
+
+
+/* -----------------------
+    Почему клиенты с нами
+   ----------------------- */
+
+.advantage{
+    min-width: 1200px;
+    padding-bottom: 15px;
+
+    &__title{
+        margin: 40px 0 35px;
+        color: @orange-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    &__text{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        &--grey{ color: @grey-color; }
+    }
+
+    &__wrapper{
+        font-size: 0;
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    &__item{
+        width: 50%;
+        font-size: 0;
+        padding: 0 40px 0 45px;
+        position: relative;
+        margin-bottom: 40px;
+        display: inline-block;
+        vertical-align: top;
+
+        &__img, &__text{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &__img{ 
+            margin: 0; 
+            width: 20%;
+            margin-right: 4%;   
+            text-align: center;
+        }
+
+        &__text{ width: 76%; }
+
+        &__title, p{
+            margin: 3px 0;
+            font-size: 18px;
+            line-height: 21px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        &__title{
+            color: @main-color;
+            font-weight: 700;
+        }
+
+        p{ font-weight: 400; }
+
+        &:before{
+            content: "";
+            width: 44px;
+            height: 44px;
+            display: block;
+            position: absolute;
+            left: -10px; top: 50%;
+            transform: translateY(-50%);
+            background: url(../img/check-icon.png) no-repeat;
+        }
+    }
+}
+
+
+/* --------------------
+    Отзывы
+   -------------------- */
+
+.reviews{
+    min-width: 1200px;
+    text-align: center;
+    padding: 0 0 12px;
+
+    .owl-carousel{ width: 1080px; margin: 0 auto; }
+    
+
+    &__title{
+        color: @orange-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    &__wrapper{
+        min-height: 363px;
+        position: relative;
+        padding: 30px 16px 55px;
+        border: 2px solid #d5d5d5;
+
+        p{
+            font-size: 14px;
+            line-height: 17px;
+            font-style: italic;
+            font-weight: 700;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        &:before{
+            content: "";
+            width: 45px;
+            height: 23px;
+            display: block;
+            background: url(../img/review-icon.png) no-repeat;
+            position: absolute;
+            bottom: -23px; left: 7px;
+        }
+    }
+
+    &__item{
+        width: 350px;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+
+        &__img{
+            margin: 0;
+            width: auto;
+            height: 55px;
+
+            &--big img{ 
+                position: relative; 
+                top: -15px; 
+            }
+        }
+    }
+}
+
+.author{
+    margin-top: 30px;
+
+    &__avatar, &__about{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__avatar{
+        margin: 0 6px 0 10px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+
+        img{ 
+            width: 100%; 
+            height: auto; 
+            border-radius: 100%;
+        }
+
+        &--empty img{ 
+            width: 40px;
+            border-radius: 0; 
+        }
+    }
+
+    &__about{ 
+        width: 260px;
+
+        p{ 
+            margin: 0; 
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        &__name{
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 700;
+            color: @main-color; 
+        } 
+
+        &__prof{
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+        }
+    }
 }
 
 
 
+/* --------------------
+   Форма заявки
+   -------------------- */
 
+.application-form{
+    min-width: 1200px;
+    text-align: center; 
+    padding: 0 0 90px;  
+    position: relative;
 
+    &__title{
+        color: @orange-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 38px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
 
-
-
+    .col:not(:last-child){ padding-right: 22px }
+}

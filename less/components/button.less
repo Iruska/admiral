@@ -37,7 +37,6 @@
 }
 
 /* Главная большая ссылка */ 
-
 .btn{
 	width: 635px;
 	margin: 0 auto;
@@ -52,16 +51,21 @@
 	.transition(0.2s);
 	
 	/* Позиционирование кнопки */ 
-	&--absolute{
+	&--bottom{
 		position: absolute;
 		left: 0; right: 0;
 		bottom: -39px;
 		margin: auto;
 	}
 
-	&:hover{ background-color: lighten(@main-color, 5%); }
+	&--top{
+		position: absolute;
+		left: 0; right: 0;
+		bottom: -39px;
+		margin: auto;
+	}
 
-	&:active{ background-color: darken(@main-color, 5%); }
-	
+	&:hover{ background-color: lighten(@main-color, 7%); }
+
+	&:active{ background-color: darken(@main-color, 7%); }
 }
-
