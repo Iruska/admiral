@@ -1,0 +1,68 @@
+/* ---------------------------
+   Подвал сайта
+   --------------------------- */
+
+.page-footer{
+	min-width: 1200px;
+	min-height: 804px;
+	padding-top: 160px;
+	text-align: center;
+	border-top: 4px solid @main-color;
+	background: #725653 url(../img/footer-bg.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+
+	&__title{
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+	.contacts{
+		width: 100%;
+		float: none;
+		margin-bottom: 30px;
+		text-align: center;
+
+		&__number{
+			font-size: 36px;
+		}
+	}
+}
+
+/* --------------------
+	Социальные кнопки
+   -------------------- */
+
+.social{
+
+	&__button{
+		width: 65px;
+		height: 65px;
+		font-size: 0;
+		margin: 0 8px;
+		display: inline-block;
+		vertical-align: top;
+		.transition(0.3s);
+		background: url(../img/social-sprite.png) no-repeat;
+
+		&--inst{
+			background-position: 0 0;
+			&:hover{ background-position: 0 -83px; }
+		}
+
+		&--lj{
+			background-position: -84px 0;
+			&:hover{ background-position: -84px -83px; }
+		}
+
+		&--fb{
+			background-position: -168px 0;
+			&:hover{ background-position: -168px -83px; }
+		}
+
+		&--vk{
+			background-position: -252px 0;
+			&:hover{ background-position: -252px -83px; }
+		}
+	}
+}
