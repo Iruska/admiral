@@ -348,7 +348,7 @@
     <article class="application-form">
       <div class="container">
         <h2 class="section-title">Оставить заявку прямо сейчас</h2>
-        <form action="/echo">
+        <form action="#" method="post">
           <fieldset class="form-wrapper">
             <label for="name">Ваше имя</label>
             <input type="text" class="custom-input" id="name" required>
@@ -364,17 +364,19 @@
               </div>
               <div class="col col-3">
                 <label for="data">Дата мероприятия</label>
-                <input type="date" class="custom-input" id="data" required>
+                <input type="date" class="custom-input custom-date" id="data" required>
               </div>
               <div class="col col-3">
                 <label for="guest">Количество гостей</label>
-                <select name="" class="custom-input" id="guest" required>
-                  <option value="">1</option>
-                  <option value="">20</option>
-                  <option value="">100</option>
-                  <option value="">1000</option>
-                  <option value="">20000</option>
-                </select>
+                <div class="custom-select">
+                  <select name="" id="guest" required>
+                    <option value="">1</option>
+                    <option value="">20</option>
+                    <option value="">100</option>
+                    <option value="">1000</option>
+                    <option value="">20000</option>
+                  </select>
+                </div>
               </div>
             </div>
 

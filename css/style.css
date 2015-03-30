@@ -311,6 +311,7 @@ textarea {
   resize: vertical;
 }
 label {
+  font-weight: 400;
   cursor: pointer;
   font-size: 18px;
   line-height: 21px;
@@ -363,6 +364,47 @@ textarea.custom-input {
 }
 .custom-button:active {
   background-color: #b4b4b4;
+}
+/* Кастомизация поля даты */
+.custom-date {
+  background: url(../img/icon-date.png) no-repeat;
+  background-position: 93% 50%;
+}
+.custom-date::-webkit-inner-spin-button {
+  display: none;
+}
+.custom-date::-webkit-calendar-picker-indicator {
+  color: transparent;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+}
+.custom-date::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+}
+.custom-date:focus {
+  background-image: url(../img/icon-date--active.png);
+}
+/* Кастомизация селекта */
+.custom-select {
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  transition: 0.2s linear all;
+  border-radius: 1px;
+  border: 1px solid #c6c6c6;
+  background: #ffffff url(../img/select-icon.png) no-repeat 93% 50%;
+}
+.custom-select:focus {
+  border-color: #ff9900;
+}
+.custom-select select {
+  width: 100%;
+  height: 42px;
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  -webkit-appearance: none;
 }
 /* ---------------------------
 	Главная навигация на сайте
