@@ -10,6 +10,10 @@ ul, h1{
 	margin: 0;
 	padding: 0;
 }
+a{
+    border: none;
+    outline: none;
+}
 
 /* --------------------
 	Промо блок с лого
@@ -153,19 +157,19 @@ ul, h1{
     &--bg2{
         background: #89a3bc url(../img/bg-2.jpg) no-repeat;
         background-position: top center;
-        background-size: cover;
+        background-size: 120%;
     }
 
     &--bg3{
         background: #023274 url(../img/bg-3.jpg) no-repeat;
         background-position: top center;
-        background-size: cover;
+        background-size: 120%;
     }
 
     &--bg4{
         background: #7fa2ca url(../img/bg-4.jpg) no-repeat;
         background-position: top center;
-        background-size: cover;
+        background-size: 120%;
     }
 }
 
@@ -209,7 +213,6 @@ ul, h1{
 
         p{
             font-size: 20px;
-            // font-weight: 400;
             line-height: 22px;
         }
 
@@ -318,6 +321,8 @@ ul, h1{
 
     .owl-carousel{ width: 1080px; margin: 0 auto; }
 
+    .owl-item{ width: 360px!important; }
+
     &__wrapper{
         min-height: 363px;
         position: relative;
@@ -326,7 +331,7 @@ ul, h1{
 
         p{
             font-size: 14px;
-            line-height: 17px;
+            line-height: 16px;
             font-style: italic;
             font-weight: 700;
         }
