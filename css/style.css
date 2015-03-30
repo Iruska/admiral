@@ -76,33 +76,48 @@
 /* ----------------------------
    Подключение шрифтов
 ------------------------------- */
+body {
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 a {
   color: #fff;
   font-size: 18px;
   line-height: 30px;
   text-decoration: none;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 p {
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
 }
+/* Главный заголовок на странице */
 .main-title {
   color: #fff;
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 30px;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
 }
+/* Большой заголовок (в основном на фото) */
 .big-title {
   color: #fff;
   font-size: 48px;
   font-weight: 200;
-  line-height: 42px;
+  line-height: 45px;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
 }
+/* Оранжевый заголовок */
+.section-title {
+  color: #ff9900;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* Благодарственное письмо */
 .letter-link {
   color: #0e8d96;
   font-size: 18px;
@@ -130,450 +145,6 @@ p {
 .letter-link--bottom {
   position: absolute;
   bottom: 20px;
-}
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: sans-serif;
-}
-ul,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-/* --------------------
-	Промо блок с лого
-   -------------------- */
-.logo {
-  width: 180px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.logo img {
-  width: 180px;
-}
-.promo {
-  padding: 17px 0;
-  min-height: 550px;
-  min-width: 1200px;
-  border-bottom: 4px solid #006e7b;
-  background: #adb4b8 url(../img/bg-promo.jpg) no-repeat;
-  background-position: 70% 50%;
-  background-size: cover;
-  position: relative;
-}
-.promo .logo {
-  margin-right: 12px;
-}
-.promo__title {
-  float: left;
-  width: 600px;
-}
-.promo .main-title {
-  width: 380px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.contacts {
-  width: 260px;
-  float: right;
-  padding-top: 14px;
-  text-align: right;
-}
-.contacts__number {
-  margin: 0;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 31px;
-}
-.contacts__number span {
-  font-weight: 100;
-}
-.contacts .call-link {
-  margin-top: 3px;
-}
-/* --------------------
-	Блок услуг
-   -------------------- */
-.services {
-  padding: 40px 0 20px;
-  text-align: center;
-  min-width: 1200px;
-}
-.services__title {
-  color: #ff9900;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 38px;
-  margin-bottom: 46px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.services__text {
-  font-size: 18px;
-  line-height: 21px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.services__text--big {
-  font-size: 24px;
-  line-height: 26px;
-  margin-top: 50px;
-}
-.services__text--grey {
-  color: #949494;
-  padding: 0 40px;
-}
-.services__block {
-  width: 835px;
-  margin: 0 auto 35px;
-}
-.services__item {
-  padding: 0 10px;
-  position: relative;
-}
-.services__item:before {
-  content: "";
-  width: 35px;
-  height: 35px;
-  display: block;
-  position: absolute;
-  right: -20px;
-  top: 45px;
-  background: url(../img/plus-icon.png) no-repeat;
-}
-.services__item:last-child:before {
-  display: none;
-}
-.services__item__img {
-  height: 92px;
-}
-.services__item__img img {
-  max-width: 130px;
-}
-.services__item__head {
-  color: #006e7b;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 18px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.services__item p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-/* ------------------------------
-    Стили для блока с фотографией
-   ------------------------------ */
-.photo {
-  min-height: 600px;
-  min-width: 1200px;
-}
-.photo .container {
-  position: relative;
-  min-height: 600px;
-}
-.photo__title {
-  text-align: right;
-  position: absolute;
-}
-.photo__title--bottom {
-  bottom: 15px;
-  right: 0;
-}
-.photo__title--top {
-  top: 40px;
-  right: 0;
-}
-.photo--bg2 {
-  background: #89a3bc url(../img/bg-2.jpg) no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-.photo--bg3 {
-  background: #023274 url(../img/bg-3.jpg) no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-.photo--bg4 {
-  background: #7fa2ca url(../img/bg-4.jpg) no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-/* --------------------
-    Как мы работаем
-   -------------------- */
-.working {
-  min-width: 1200px;
-  padding: 0 0 25px;
-  text-align: center;
-}
-.working__title {
-  color: #ff9900;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.working__text {
-  font-size: 18px;
-  line-height: 21px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.working__text--wrapper {
-  width: 70%;
-  margin: 35px auto 70px;
-}
-.working__text--grey {
-  color: #949494;
-}
-.process {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.process .col-3 {
-  width: 20%;
-  padding: 0 20px;
-}
-.process__item {
-  position: relative;
-}
-.process__item__img {
-  height: 110px;
-}
-.process__item p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.process__item:before {
-  content: "";
-  width: 41px;
-  height: 41px;
-  display: block;
-  position: absolute;
-  right: -18px;
-  top: 54px;
-  background: url(../img/arrow-icon.png) no-repeat;
-}
-.process__item:last-child:before {
-  display: none;
-}
-/* -----------------------
-    Почему клиенты с нами
-   ----------------------- */
-.advantage {
-  min-width: 1200px;
-  padding-bottom: 15px;
-}
-.advantage__title {
-  margin: 40px 0 35px;
-  color: #ff9900;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 38px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.advantage__text {
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.advantage__text--grey {
-  color: #949494;
-}
-.advantage__wrapper {
-  font-size: 0;
-  width: 1080px;
-  margin: 0 auto;
-}
-.advantage__item {
-  width: 50%;
-  font-size: 0;
-  padding: 0 40px 0 45px;
-  position: relative;
-  margin-bottom: 40px;
-  display: inline-block;
-  vertical-align: top;
-}
-.advantage__item__img,
-.advantage__item__text {
-  display: inline-block;
-  vertical-align: middle;
-}
-.advantage__item__img {
-  margin: 0;
-  width: 20%;
-  margin-right: 4%;
-  text-align: center;
-}
-.advantage__item__text {
-  width: 76%;
-}
-.advantage__item__title,
-.advantage__item p {
-  margin: 3px 0;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.advantage__item__title {
-  color: #006e7b;
-  font-weight: 700;
-}
-.advantage__item p {
-  font-weight: 400;
-}
-.advantage__item:before {
-  content: "";
-  width: 44px;
-  height: 44px;
-  display: block;
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: url(../img/check-icon.png) no-repeat;
-}
-/* --------------------
-    Отзывы
-   -------------------- */
-.reviews {
-  min-width: 1200px;
-  text-align: center;
-  padding: 0 0 12px;
-}
-.reviews .owl-carousel {
-  width: 1080px;
-  margin: 0 auto;
-}
-.reviews__title {
-  color: #ff9900;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.reviews__wrapper {
-  min-height: 363px;
-  position: relative;
-  padding: 30px 16px 55px;
-  border: 2px solid #d5d5d5;
-}
-.reviews__wrapper p {
-  font-size: 14px;
-  line-height: 17px;
-  font-style: italic;
-  font-weight: 700;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.reviews__wrapper:before {
-  content: "";
-  width: 45px;
-  height: 23px;
-  display: block;
-  background: url(../img/review-icon.png) no-repeat;
-  position: absolute;
-  bottom: -23px;
-  left: 7px;
-}
-.reviews__item {
-  width: 350px;
-  text-align: left;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-}
-.reviews__item__img {
-  margin: 0;
-  width: auto;
-  height: 55px;
-}
-.reviews__item__img--big img {
-  position: relative;
-  top: -15px;
-}
-.author {
-  margin-top: 30px;
-}
-.author__avatar,
-.author__about {
-  display: inline-block;
-  vertical-align: middle;
-}
-.author__avatar {
-  margin: 0 6px 0 10px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-}
-.author__avatar img {
-  width: 100%;
-  height: auto;
-  border-radius: 100%;
-}
-.author__avatar--empty img {
-  width: 40px;
-  border-radius: 0;
-}
-.author__about {
-  width: 260px;
-}
-.author__about p {
-  margin: 0;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.author__about__name {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #006e7b;
-}
-.author__about__prof {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-}
-/* --------------------
-   Форма заявки
-   -------------------- */
-.application-form {
-  min-width: 1200px;
-  text-align: center;
-  padding: 0 0 90px;
-  position: relative;
-}
-.application-form__title {
-  color: #ff9900;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 38px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.application-form .col:not(:last-child) {
-  padding-right: 22px;
 }
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
@@ -657,7 +228,7 @@ li {
 .btn-order {
   padding: 2px 0;
   min-width: 170px;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 3px;
   text-align: center;
   display: inline-block;
@@ -689,6 +260,7 @@ li {
   width: 635px;
   margin: 0 auto;
   display: block;
+  font-weight: 500;
   padding: 21px 10px;
   font-size: 36px;
   line-height: 36px;
@@ -745,7 +317,6 @@ label {
   margin: 11px 0 4px;
   display: inline-block;
   vertical-align: top;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 button {
   cursor: pointer;
@@ -861,7 +432,7 @@ textarea.custom-input {
   margin: 0 8px;
   display: inline-block;
   vertical-align: top;
-  transition: 0.3s linear all;
+  transition: 0.2s linear all;
   background: url(../img/social-sprite.png) no-repeat;
 }
 .social__button--inst {
@@ -887,4 +458,395 @@ textarea.custom-input {
 }
 .social__button--vk:hover {
   background-position: -252px -83px;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+/* --------------------
+	Промо блок с лого
+   -------------------- */
+.promo {
+  padding: 17px 0;
+  min-height: 550px;
+  min-width: 1200px;
+  border-bottom: 4px solid #006e7b;
+  background: #adb4b8 url(../img/bg-promo.jpg) no-repeat;
+  background-position: 70% 50%;
+  background-size: cover;
+  position: relative;
+}
+/* Логотип */
+.logo {
+  float: left;
+  width: 600px;
+}
+.logo__image,
+.logo .main-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo__image {
+  width: 180px;
+  margin-right: 12px;
+}
+.logo__image img {
+  width: 180px;
+}
+.logo .main-title {
+  width: 380px;
+}
+/* Контакты (телефоны) */
+.contacts {
+  width: 260px;
+  float: right;
+  padding-top: 14px;
+  text-align: right;
+}
+.contacts__number {
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 31px;
+  font-family: 'Roboto', sans-serif;
+}
+.contacts__number span {
+  font-weight: 100;
+}
+/* --------------------
+	Блок услуг
+   -------------------- */
+.services {
+  padding: 40px 0 20px;
+  text-align: center;
+  min-width: 1200px;
+}
+.services .section-title {
+  margin-bottom: 46px;
+}
+.services__text {
+  font-size: 18px;
+  line-height: 21px;
+}
+.services__text--big {
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+.services__text--grey {
+  color: #949494;
+  padding: 0 40px;
+}
+.services__block {
+  width: 835px;
+  margin: 0 auto 35px;
+}
+.services__item {
+  padding: 0 10px;
+  position: relative;
+}
+.services__item:before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 45px;
+  background: url(../img/plus-icon.png) no-repeat;
+}
+.services__item:last-child:before {
+  display: none;
+}
+.services__item__img {
+  height: 92px;
+}
+.services__item__img img {
+  max-width: 130px;
+}
+.services__item__head {
+  color: #006e7b;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 18px;
+}
+/* ------------------------------
+    Стили для блока с фотографией
+   ------------------------------ */
+.photo {
+  min-height: 600px;
+  min-width: 1200px;
+}
+.photo .container {
+  position: relative;
+  min-height: 600px;
+}
+.photo__title {
+  text-align: right;
+  position: absolute;
+}
+.photo__title--bottom {
+  bottom: 15px;
+  right: 0;
+}
+.photo__title--top {
+  top: 40px;
+  right: 0;
+}
+.photo--bg2 {
+  background: #89a3bc url(../img/bg-2.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.photo--bg3 {
+  background: #023274 url(../img/bg-3.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.photo--bg4 {
+  background: #7fa2ca url(../img/bg-4.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+/* --------------------
+    Как мы работаем
+   -------------------- */
+.working {
+  min-width: 1200px;
+  padding: 0 0 25px;
+  text-align: center;
+}
+.working__text {
+  font-size: 18px;
+  line-height: 21px;
+}
+.working__text--wrapper {
+  width: 70%;
+  margin: 35px auto 70px;
+}
+.working__text--grey {
+  color: #949494;
+}
+.process {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.process .col-3 {
+  width: 20%;
+  padding: 0 20px;
+}
+.process__item {
+  position: relative;
+}
+.process__item__img {
+  height: 110px;
+}
+.process__item p {
+  font-size: 20px;
+  line-height: 22px;
+}
+.process__item:before {
+  content: "";
+  width: 41px;
+  height: 41px;
+  display: block;
+  position: absolute;
+  right: -18px;
+  top: 54px;
+  background: url(../img/arrow-icon.png) no-repeat;
+}
+.process__item:last-child:before {
+  display: none;
+}
+/* -----------------------
+    Почему клиенты с нами
+   ----------------------- */
+.advantage {
+  min-width: 1200px;
+  padding-bottom: 15px;
+}
+.advantage .section-title {
+  margin: 40px 0 35px;
+  text-align: center;
+}
+.advantage__text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+.advantage__text--grey {
+  color: #949494;
+}
+.advantage__wrapper {
+  font-size: 0;
+  width: 1080px;
+  margin: 0 auto;
+}
+.advantage__item {
+  width: 50%;
+  font-size: 0;
+  padding: 0 40px 0 45px;
+  position: relative;
+  margin-bottom: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+.advantage__item__img,
+.advantage__item__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.advantage__item__img {
+  margin: 0;
+  width: 20%;
+  margin-right: 4%;
+  text-align: center;
+}
+.advantage__item__text {
+  width: 76%;
+}
+.advantage__item__title,
+.advantage__item p {
+  margin: 3px 0;
+  font-size: 18px;
+  line-height: 21px;
+}
+.advantage__item__title {
+  color: #006e7b;
+  font-weight: 700;
+}
+.advantage__item p {
+  font-weight: 400;
+}
+.advantage__item:before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../img/check-icon.png) no-repeat;
+}
+/* --------------------
+    Отзывы
+   -------------------- */
+.reviews {
+  min-width: 1200px;
+  text-align: center;
+  padding: 0 0 12px;
+}
+.reviews .owl-carousel {
+  width: 1080px;
+  margin: 0 auto;
+}
+.reviews__wrapper {
+  min-height: 363px;
+  position: relative;
+  padding: 30px 16px 55px;
+  border: 2px solid #d5d5d5;
+}
+.reviews__wrapper p {
+  font-size: 14px;
+  line-height: 17px;
+  font-style: italic;
+  font-weight: 700;
+}
+.reviews__wrapper:before {
+  content: "";
+  width: 45px;
+  height: 23px;
+  display: block;
+  background: url(../img/review-icon.png) no-repeat;
+  position: absolute;
+  bottom: -23px;
+  left: 7px;
+}
+.reviews__item {
+  width: 350px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.reviews__item__img {
+  margin: 0;
+  width: auto;
+  height: 55px;
+}
+.reviews__item__img--big img {
+  position: relative;
+  top: -15px;
+}
+.author {
+  margin-top: 30px;
+}
+.author__avatar,
+.author__about {
+  display: inline-block;
+  vertical-align: middle;
+}
+.author__avatar {
+  margin: 0 6px 0 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.author__avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+.author__avatar--empty img {
+  width: 40px;
+  border-radius: 0;
+}
+.author__about {
+  width: 260px;
+}
+.author__about p {
+  margin: 0;
+}
+.author__about__name {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #006e7b;
+}
+.author__about__prof {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+/* --------------------
+   Форма заявки
+   -------------------- */
+.application-form {
+  min-width: 1200px;
+  text-align: center;
+  padding: 0 0 90px;
+  position: relative;
+}
+.application-form .section-title {
+  margin-bottom: 20px;
+}
+.application-form .col:not(:last-child) {
+  padding-right: 22px;
 }

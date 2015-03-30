@@ -2,37 +2,58 @@
    Подключение шрифтов
 ------------------------------- */
 
+body{
+	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
 a{
 	color: #fff;
 	font-size: 18px;
 	line-height: 30px;
 	text-decoration: none;
-	font-family: 'Roboto Condensed', sans-serif;
 }
 
 p{
-	font-weight: 300;
-	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
 }
 
+
+/* Главный заголовок на странице */ 
 .main-title{
 	color: #fff;
 	font-size: 32px;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 30px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 }
 
+
+/* Большой заголовок (в основном на фото) */ 
 .big-title{
 	color: #fff;
 	font-size: 48px;
 	font-weight: 200;
-	line-height: 42px;
+	line-height: 45px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 }
 
+
+/* Оранжевый заголовок */
+.section-title{
+	color: @orange-color;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Благодарственное письмо */ 
 .letter-link{
 	color: @green-color;
 	font-size: 18px;
@@ -59,5 +80,4 @@ p{
 		position: absolute;
 		bottom: 20px;
 	}
-
 }

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<!-- Заголовок страницы -->
-    <title>Адмирал</title>
+    <title>Адмирал - главная</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="index, follow">
     <meta name="description" content="Описание страницы">
@@ -10,7 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,300,700&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <!-- Стили -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-dist.css" />
   </head>
   <body>
 
@@ -35,10 +34,10 @@
     </header>
 
     <!-- Промо с логотипом и телефоном -->
-    <section class="promo">
+    <article class="promo">
       <div class="container row">
-        <div class="promo__title">
-          <a href="#" class="logo">
+        <div class="logo">
+          <a href="#" class="logo__image">
             <img src="img/logo.png" height="88" width="180" alt="Адмирал" />
           </a>
           <h1 class="main-title">Официальная аренда теплоходов в москве</h1>
@@ -47,17 +46,17 @@
         <div class="contacts">
           <p class="contacts__number"><span>+7 (495)</span> 722-52-24</p>
           <p class="contacts__number"><span>+7 (964)</span> 794-91-98</p>
-          <a href="#" class="call-link contacts__call-link">Заказать звонок</a>
+          <a href="#" class="call-link">Заказать звонок</a>
         </div>
       </div>
 
       <a href="#" class="btn btn--bottom">Начать подбор теплохода</a>
-    </section>
+    </article>
 
     <!-- Сервис -->
     <article class="services">
       <div class="container">
-        <h2 class="services__title">СК «АДМИРАЛ» — ВСЕГДА В ДВИЖЕНИИ</h2>
+        <h2 class="section-title">СК «АДМИРАЛ» — ВСЕГДА В ДВИЖЕНИИ</h2>
         <p class="services__text">Мы занимается подбором и бронированием теплоходов.<br/> Создаем уникальные события.</p>
         <p class="services__text services__text--big">Из чего складывается стоимость мероприятия на теплоходе</p>
         <section class="services__block row">
@@ -91,7 +90,7 @@
     <!-- Как мы работаем -->
     <article class="working">
       <div class="container">
-        <h2 class="working__title">Как мы работаем</h2>
+        <h2 class="section-title">Как мы работаем</h2>
 
         <p class="working__text working__text--wrapper">Философия и уникальность компании нашей компании состоит в том, что мы работаем на клиента,<br/> у нас лучший теплоходный парк в Москве и никто кроме нас так ответственно не проводит все мероприятия</p>
 
@@ -145,7 +144,7 @@
     <!-- Почему клиенты с нами -->
     <article class="advantage">
       <div class="container">
-        <h2 class="advantage__title">Почему клиенты остаются с нами</h2>
+        <h2 class="section-title">Почему клиенты остаются с нами</h2>
         <div class="advantage__wrapper">
 
           <div class="advantage__item">
@@ -245,7 +244,7 @@
     <!-- Отзывы клиентов -->
     <article class="reviews">
       <div class="container">
-        <h2 class="reviews__title">Отзывы наших клиентов</h2>
+        <h2 class="section-title">Отзывы наших клиентов</h2>
         <div id="review-slider" class="owl-carousel">
 
           <div class="reviews__item">
@@ -348,7 +347,7 @@
     <!-- Форма заявки -->
     <article class="application-form">
       <div class="container">
-        <h2 class="application-form__title">Оставить заявку прямо сейчас</h2>
+        <h2 class="section-title">Оставить заявку прямо сейчас</h2>
         <form action="/echo">
           <fieldset class="form-wrapper">
             <label for="name">Ваше имя</label>
