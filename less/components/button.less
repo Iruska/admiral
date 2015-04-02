@@ -25,18 +25,27 @@
 /* Ссылка заказать звонок */ 
 .call-link{
 	font-weight: 300;
-	line-height: 20px;
+	line-height: 22px;
 	vertical-align: top;
 	display: inline-block;
-	transition: 0.2s ease border-color;
-	border-bottom: 2px solid #fff;
+	border-bottom: 1px solid #fff;
+	.transition(0.2s);
 
-	&:hover{ border-color: transparent; }
+	&:hover{ 
+		color: @main-color; 
+		border-color: @main-color;
+	}
+
+	&--orange{ 
+		color: @orange-color;
+		border-color: @orange-color; 
+	}
 
 }
 
 /* Главная большая ссылка */ 
 .btn{
+	color: #fff;
 	width: 635px;
 	margin: 0 auto;
 	display: block;
@@ -68,4 +77,29 @@
 	&:hover{ background-color: lighten(@main-color, 7%); }
 
 	&:active{ background-color: darken(@main-color, 7%); }
+}
+
+/* Ссылка открытия формы поиска */
+.search-link{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 38px;
+	color: @orange-color;
+	display: inline-block;
+	vertical-align: top;
+	text-transform: uppercase;
+	border-bottom: 2px dashed @orange-color;
+	font-family: 'Roboto Condensed', sans-serif;
+	.transition(0.2s);
+
+	&:hover{
+		color: @main-color;
+		border-color: @main-color;
+	}
+
+	&:active{
+		color: darken(@main-color, 10%);
+		border-color: darken(@main-color, 10%);
+	}
+
 }

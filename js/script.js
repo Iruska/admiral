@@ -34,4 +34,8 @@ $(document).ready(function(){
         }
 	})
 
+    $(".js-search-link").click(function(){
+        $(".form-search__wrapper").toggleClass('active');
+    });
+
 });

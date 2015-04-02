@@ -246,17 +246,23 @@ p {
 /* Ссылка заказать звонок */
 .call-link {
   font-weight: 300;
-  line-height: 20px;
+  line-height: 22px;
   vertical-align: top;
   display: inline-block;
-  transition: 0.2s ease border-color;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.2s linear all;
 }
 .call-link:hover {
-  border-color: transparent;
+  color: #006e7b;
+  border-color: #006e7b;
+}
+.call-link--orange {
+  color: #ff9900;
+  border-color: #ff9900;
 }
 /* Главная большая ссылка */
 .btn {
+  color: #fff;
   width: 635px;
   margin: 0 auto;
   display: block;
@@ -291,10 +297,31 @@ p {
 .btn:active {
   background-color: #004e57;
 }
+/* Ссылка открытия формы поиска */
+.search-link {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #ff9900;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  border-bottom: 2px dashed #ff9900;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: 0.2s linear all;
+}
+.search-link:hover {
+  color: #006e7b;
+  border-color: #006e7b;
+}
+.search-link:active {
+  color: #004048;
+  border-color: #004048;
+}
 form * {
   font-family: 'Roboto Condensed', sans-serif;
 }
-input,
+input[type="text"],
 select,
 textarea,
 button {
@@ -317,7 +344,7 @@ label {
   line-height: 21px;
   margin: 11px 0 4px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 button {
   cursor: pointer;
@@ -406,6 +433,79 @@ textarea.custom-input {
   background: transparent;
   -webkit-appearance: none;
 }
+/* Кастомизация радио-кнопок */
+.custom-check {
+  display: none;
+}
+.custom-check + label {
+  margin: 0;
+  color: #006e7b;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.1s linear all;
+}
+.custom-check + label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/check-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+}
+.custom-check + label:hover {
+  color: #ff9900;
+}
+.custom-check:hover + label::before {
+  background-position: 0 -25px;
+}
+.custom-check:checked + label {
+  color: #ff9900;
+}
+.custom-check:checked + label::before {
+  background-position: 0 -48px;
+}
+/* Форма поиска */
+.form-search {
+  min-width: 1200px;
+  padding: 20px 0 65px;
+  text-align: center;
+  position: relative;
+}
+.form-search .search-link {
+  margin-bottom: 16px;
+}
+.form-search .row {
+  margin-bottom: 10px;
+}
+.form-search .col-3 {
+  width: 21%;
+  margin-right: 5%;
+}
+.form-search .col-3:last-child {
+  margin-right: 0;
+}
+.form-search__wrapper {
+  text-align: left;
+  padding: 0 14px 14px;
+  border: 1px solid #c5c5c5;
+  transition: 0.2s linear all;
+  display: none;
+}
+.form-search__wrapper.active {
+  display: inherit;
+}
+.form-search__item {
+  margin: 10px 0 10px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.form-search__list li {
+  display: block;
+  margin: 10px 0;
+}
 /* ---------------------------
 	Главная навигация на сайте
    --------------------------- */
@@ -437,6 +537,10 @@ textarea.custom-input {
 }
 .main-nav__link:active {
   color: #cc7a00;
+}
+.sub-header {
+  padding: 17px 0;
+  min-width: 1200px;
 }
 /* ---------------------------
    Подвал сайта
@@ -554,6 +658,9 @@ a {
 .logo .main-title {
   width: 380px;
 }
+.logo .main-title--orange {
+  color: #ff9900;
+}
 /* Контакты (телефоны) */
 .contacts {
   width: 260px;
@@ -571,6 +678,9 @@ a {
 }
 .contacts__number span {
   font-weight: 100;
+}
+.contacts__number--orange {
+  color: #ff9900;
 }
 /* --------------------
 	Блок услуг

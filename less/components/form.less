@@ -2,7 +2,7 @@ form *{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-input, select, textarea, button{
+input[type="text"], select, textarea, button{
 	width: 100%;
 	border: 0;
 	outline: none;
@@ -23,7 +23,7 @@ label{
 	line-height: 21px;
 	margin: 11px 0 4px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 button{ cursor: pointer; }
@@ -94,7 +94,6 @@ textarea.custom-input{ height: 120px; }
 }
 
 /* Кастомизация селекта */ 
-
 .custom-select{
     width: 100%;
     height: 42px;
@@ -114,4 +113,73 @@ textarea.custom-input{ height: 120px; }
         background: transparent;
         -webkit-appearance: none;
     }
+}
+
+/* Кастомизация радио-кнопок */ 
+.custom-check { display: none; }
+.custom-check + label {
+	margin: 0;
+	color: #006e7b;
+	cursor: pointer;
+	font-size: 18px;
+	.transition(0.1s);
+}
+.custom-check + label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../img/check-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 -1px;
+}
+
+.custom-check + label:hover { color: #ff9900; }
+.custom-check:hover + label::before { background-position: 0 -25px; }
+
+.custom-check:checked + label { color: #ff9900; }
+.custom-check:checked + label::before { background-position: 0 -48px; }
+
+
+/* Форма поиска */
+.form-search{
+	min-width: 1200px;
+	padding: 20px 0 65px;
+	text-align: center;
+	position: relative;
+
+	.search-link{ margin-bottom: 16px; }
+
+	.row{ margin-bottom: 10px; }
+	
+	.col-3{
+		width: 21%;
+		margin-right: 5%;
+		&:last-child{ margin-right: 0; }
+	}
+	
+	&__wrapper{
+		text-align: left;
+		padding: 0 14px 14px;
+		border: 1px solid #c5c5c5;
+		.transition(0.2s);
+		display: none;
+
+		&.active{ display: inherit; }
+	}
+
+	&__item{
+		margin: 10px 0 10px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	&__list{
+		li{
+			display: block;
+			margin: 10px 0;
+		}
+	}
 }

@@ -46,7 +46,10 @@ a{
         img{ width: 180px; }
     }
 
-    .main-title{ width: 380px; }
+    .main-title{ 
+        width: 380px; 
+        &--orange{ color: @orange-color; }
+    }
 }
 
 /* Контакты (телефоны) */ 
@@ -64,6 +67,8 @@ a{
 		line-height: 31px;
         font-family: 'Roboto', sans-serif;
 		span{ font-weight: 100; }
+
+        &--orange{ color: @orange-color; }
 	}
 }
 
