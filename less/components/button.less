@@ -101,5 +101,40 @@
 		color: darken(@main-color, 10%);
 		border-color: darken(@main-color, 10%);
 	}
-
 }
+
+/* Стили сортировки */
+.sorting{
+	margin: 20px 0;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+
+	&__link{
+		font-size: 24px;
+		line-height: 26px;
+		color: @main-color;
+		.transition(0.2s);
+		border-bottom: 1px dashed @main-color;
+		&:hover{
+			color: lighten(@main-color, 5%);
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+/* Кнопка подробнее */
+.btn-more{
+	color: #fff;
+	font-size: 18px;
+	min-width: 104px;
+	padding: 8px 10px;
+	text-align: center;
+	border-radius: 3px;
+	.transition(0.2s);
+	background-color: @main-color;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+
+	&:hover{ background-color: lighten(@main-color, 7%); }
+	&:active{ background-color: darken(@main-color, 7%); }
+} 

@@ -1,0 +1,55 @@
+/* ---------------------------
+   Результаты поиска
+   --------------------------- */
+
+.product-item{
+
+	&__img, &__desc{
+		float: left;
+	}
+
+	&__img{
+		width: 320px;
+		margin-right: 23px;
+		img{ width: 100%; }
+	}
+
+	&__desc{
+		width: 800px;
+	}
+
+	&__title{
+		font-size: 24px;
+		line-height: 30px;
+		color: @main-color;
+		.transition(0.2s);
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 5px;
+		text-decoration: underline;
+
+		&:hover { color: lighten(@main-color, 10%); }
+		&:active{ color: darken(@main-color, 5%); }
+	}
+
+	&__table{
+		width: 100%;
+		display: block;
+		text-align: left;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        letter-spacing: -0.2px;
+
+		tbody td{
+			border-top: 1px solid #c7c7c7;
+            &:nth-child(2n){ background-color: #e5e5e5; }
+		}
+
+       td:not(:first-child){ padding: 6px 14px; }
+	}
+}
+
+.results{
+	margin: 50px 0;
+}
