@@ -341,7 +341,7 @@ p {
   color: #fff;
   font-size: 18px;
   min-width: 104px;
-  padding: 8px 10px;
+  padding: 7px 10px;
   text-align: center;
   border-radius: 3px;
   transition: 0.2s linear all;
@@ -526,7 +526,7 @@ textarea.custom-input {
 }
 .form-search__wrapper {
   text-align: left;
-  padding: 0 14px 14px;
+  padding: 0 14px;
   border: 1px solid #c5c5c5;
   transition: 0.2s linear all;
   display: none;
@@ -569,7 +569,8 @@ textarea.custom-input {
 .main-nav__link:last-child {
   margin-right: 0;
 }
-.main-nav__link:hover {
+.main-nav__link:hover,
+.main-nav__link.active {
   color: #ff9900;
 }
 .main-nav__link:active {
@@ -645,9 +646,15 @@ textarea.custom-input {
 /* ---------------------------
    Результаты поиска
    --------------------------- */
+.product-item {
+  margin: 23px 0 22px;
+}
 .product-item__img,
 .product-item__desc {
   float: left;
+}
+.product-item__desc {
+  width: 800px;
 }
 .product-item__img {
   width: 320px;
@@ -656,18 +663,15 @@ textarea.custom-input {
 .product-item__img img {
   width: 100%;
 }
-.product-item__desc {
-  width: 800px;
-}
 .product-item__title {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 25px;
   color: #006e7b;
   transition: 0.2s linear all;
+  margin-bottom: 2px;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 5px;
-  text-decoration: underline;
+  border-bottom: 1px solid #006e7b;
 }
 .product-item__title:hover {
   color: #009cae;
@@ -684,17 +688,49 @@ textarea.custom-input {
   margin-bottom: 5px;
   letter-spacing: -0.2px;
 }
+.product-item__table td {
+  min-width: 60px;
+}
 .product-item__table tbody td {
   border-top: 1px solid #c7c7c7;
 }
 .product-item__table tbody td:nth-child(2n) {
   background-color: #e5e5e5;
 }
+.product-item__table tfoot td {
+  border-top: 1px solid #c7c7c7;
+}
 .product-item__table td:not(:first-child) {
-  padding: 6px 14px;
+  padding: 5px 20px 5px 15px;
 }
 .results {
-  margin: 50px 0;
+  padding: 40px 0 55px;
+  position: relative;
+}
+/* Двойная тень у картинки */
+.img-shadow {
+  position: relative;
+}
+.img-shadow:before,
+.img-shadow:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 47%;
+  top: 80%;
+  box-shadow: 0 12px 9px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+.img-shadow:after {
+  -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
+  right: 10px;
+  left: auto;
 }
 *,
 *:after,
