@@ -121,7 +121,7 @@ textarea.custom-input{ height: 120px; }
 .custom-check { display: none; }
 .custom-check + label {
 	margin: 0;
-	color: #006e7b;
+	color: @main-color;
 	cursor: pointer;
 	font-size: 18px;
 	.transition(0.1s);
@@ -144,6 +144,26 @@ textarea.custom-input{ height: 120px; }
 .custom-check:checked + label { color: #ff9900; }
 .custom-check:checked + label::before { background-position: 0 -48px; }
 
+
+/* Кастомизация радио-кнопок - Тип теплохода */ 
+.custom-type-button{ display: none; }
+.custom-type-button + label{
+	margin: 0;
+	color: @main-color;
+	cursor: pointer;
+	font-size: 18px;
+	position: relative;
+}
+.custom-type-button + label::before {
+	content: "";
+	width: 130px;
+	height: 66px;
+	// background-image: url(../img/boat-sprite.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0; left: 50%;
+	transform: translateX(-50%);
+}
 
 /* Форма поиска */
 .form-search{
@@ -185,4 +205,18 @@ textarea.custom-input{ height: 120px; }
 			margin: 10px 0;
 		}
 	}
+}
+
+/* Форма - типы теплоходов */ 
+.form-typeboat{
+	border: 0;
+	text-align: center;
+
+	&__column{
+		width: 14,2%;
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+
 }

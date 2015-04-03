@@ -48,3 +48,21 @@
     &:nth-child(4){ transition-delay: 0.7s; }
     &:nth-child(5){ transition-delay: 0.9s; }
 }
+
+
+/* Анимация иконок при наведении */ 
+
+.animate-icon:hover{
+    .transition(0.3s);
+    -webkit-animation: 1s linear infinite icon-animate;
+    -moz-animation: 1s linear infinite icon-animate;
+    animation: 1s linear infinite icon-animate; 
+}
+
+@-webkit-keyframes icon-animate{
+    0% { transform: rotate(0deg); } 
+    25%{ transform: rotate(-10deg); } 
+    50%{ transform: rotate(0deg); } 
+    75%{ transform: rotate(10deg); } 
+    100%{ transform: rotate(0deg); } 
+}

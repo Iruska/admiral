@@ -59,6 +59,9 @@
   clear: both;
   display: table;
 }
+.row--inline {
+  font-size: 0;
+}
 [class*=col-] .row [class*=col-]:first-child:last-child {
   padding-left: 0;
   padding-right: 0;
@@ -115,6 +118,7 @@ p {
   font-size: 36px;
   line-height: 38px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
 }
 /* Благодарственное письмо */
@@ -505,6 +509,29 @@ textarea.custom-input {
 .custom-check:checked + label::before {
   background-position: 0 -48px;
 }
+/* Кастомизация радио-кнопок - Тип теплохода */
+.custom-type-button {
+  display: none;
+}
+.custom-type-button + label {
+  margin: 0;
+  color: #006e7b;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+}
+.custom-type-button + label::before {
+  content: "";
+  width: 130px;
+  height: 66px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 /* Форма поиска */
 .form-search {
   min-width: 1200px;
@@ -544,6 +571,16 @@ textarea.custom-input {
 .form-search__list li {
   display: block;
   margin: 10px 0;
+}
+/* Форма - типы теплоходов */
+.form-typeboat {
+  border: 0;
+  text-align: center;
+}
+.form-typeboat__column {
+  width: 14,2%;
+  display: inline-block;
+  vertical-align: top;
 }
 /* ---------------------------
 	Главная навигация на сайте
@@ -1138,6 +1175,44 @@ a {
 .application-form .col:not(:last-child) {
   padding-right: 22px;
 }
+/* ----------------------
+   Дополнительные услуги
+   ---------------------- */
+.options {
+  text-align: center;
+}
+.options__text {
+  width: 75%;
+  font-size: 24px;
+  line-height: 27px;
+  margin: 20px auto 20px;
+}
+.options__item {
+  width: 20%;
+  margin: 10px 0;
+  padding: 0 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.options__item__img {
+  min-height: 97px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.options__item__img img {
+  max-width: 110px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.options__item p {
+  font-size: 20px;
+  line-height: 23px;
+}
 /* --------------------
    Анимации
    -------------------- */
@@ -1190,4 +1265,32 @@ a {
 }
 .animate-block:nth-child(5) {
   transition-delay: 0.9s;
+}
+/* Анимация иконок при наведении */
+.animate-icon:hover {
+  transition: 0.3s linear all;
+  -webkit-animation: 1s linear infinite icon-animate;
+  animation: 1s linear infinite icon-animate;
+}
+@-webkit-keyframes icon-animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }

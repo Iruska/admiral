@@ -433,3 +433,50 @@ a{
 
     .col:not(:last-child){ padding-right: 22px }
 }
+
+
+/* ----------------------
+   Дополнительные услуги
+   ---------------------- */
+
+.options{
+    text-align: center;
+    
+    &__text{
+        width: 75%;
+        font-size: 24px;
+        line-height: 27px;
+        margin: 20px auto 20px;
+    }
+
+    &__item{
+        width: 20%;
+        margin: 10px 0;
+        padding: 0 30px;
+        display: inline-block;
+        vertical-align: top;
+        
+        &__img{           
+            min-height: 97px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            
+            img{ 
+                max-width: 110px; 
+                position: absolute;
+                left: 50%; top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
+
+
+
+

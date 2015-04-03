@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Адмирал - результаты</title>
+    <title>Адмирал - поиск и подбор</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="index, follow">
     <meta name="description" content="Описание страницы">
@@ -54,33 +54,64 @@
       </div>
     </section>
 
+    <!-- Поиск и подбор теплохода -->
+    <section class="selection">
+      <div class="container">
+        <h2 class="section-title">Поиск и подбор теплохода</h2>
+
+        <form action="">
+          <fieldset class="form-typeboat">
+            <p class="">Выберите тип теплохода</p>
+            <ul class="row--inline">
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="guest50">
+                <label for="guest50">до 50 гостей</label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="guest100">
+                <label for="guest100">до 100 гостей</label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="guest500">
+                <label for="guest500">от 100 до 500 гостей</label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="vip-boat">
+                <label for="vip-boat">VIP теплоходы</label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="panoram-boat">
+                <label for="panoram-boat">Панорамные</label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="mini-cruise">
+                <label for="mini-cruise">Мини-круизы</label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="radio" name="type-boat" class="custom-type-button" id="yacht">
+                <label for="yacht">Яхты</label>
+              </li>
+            </ul>
+
+            <!-- Поле поиска -->
+            <label class="" for="search-boat">Или введите его название</label>
+            <input type="search" class="custom-input custom-search" id="search-boat">
+            
+            <p>Например, <a href="#">River Palace</a> или «<a href="#">Царица Елена</a>»</p>
+
+          </fieldset>
+        </form>
+
+      </div>
+    </section>
+
     <!-- Форма поиска -->
     <section class="form-search">
       <div class="container">
-        <a href="#" class="search-link js-search-link">Что вы искали</a>
+        <a href="#" class="search-link js-search-link">Расширенный поиск по параметрам</a>
         <!-- Сама форма -->
         <form action="">
           <fieldset class="form-search__wrapper">
-            <p class="form-search__item">Особенности теплохода</p>
-            <div class="row">
-              <div class="col-3">
-                <input type="radio" class="custom-check" name="feature" id="panoramic">
-                <label for="panoramic">Панорамный</label>
-              </div>
-              <div class="col-3">
-                <input type="radio" class="custom-check" name="feature" id="vipboat">
-                <label for="vipboat">VIP теплоход</label>
-              </div>
-              <div class="col-3">
-                <input type="radio" class="custom-check" name="feature" id="minicruise">
-                <label for="minicruise">Мини-круиз</label>
-              </div>
-              <div class="col-3">
-                <input type="radio" class="custom-check" name="feature" id="yacht">
-                <label for="yacht">Яхта</label>
-              </div>
-            </div>
-
             <div class="row">
               <div class="col-3">
                 <p class="form-search__item">Вместимость теплохода</p>
@@ -152,21 +183,95 @@
               </div>
             </div>
           </fieldset>
-
           <button class="btn btn--bottom">Показать <span>145</span> теплоходов</button>
         </form>
       </div>
     </section>
 
+    <!-- Блок с беграундом -->
+    <section class="photo photo--bg2">
+      <div class="container">
+        <h3 class="photo__title photo__title--bottom big-title">Акции</h3>
+      </div>
+    </section>
+
+    <!-- Дополнительные услуги -->
+    <article class="options">
+      <div class="container">
+        <h2 class="section-title">Дополнительные услуги</h2>
+        <p class="options__text">На всех наших теплоходах мы предлагаем широкий спектр дополнительных услуг. Нажмите на иконку, чтобы узнать подробнее</p>
+        
+        <section class="row--inline">
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-1.png" height="97" width="110" alt="">
+            </a>
+            <p>Наши ведущие</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-2.png" height="91" width="59" alt="">
+            </a>
+            <p>Диджей + <br/>аренда звукового оборудования</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-3.png" height="90" width="94" alt="">
+            </a>
+            <p>Декор воздушными шарами</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-4.png" height="72" width="92" alt="">
+            </a>
+            <p>Свадебное оформление</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-5.png" height="81" width="81" alt="">
+            </a>
+            <p>Выездная регистрация брака</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-6.png" height="83" width="79">
+            </a>
+            <p>Фейрверк</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-7.png" height="88" width="88">
+            </a>
+            <p>Тимбилдинг</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-8.png" height="65" width="93">
+            </a>
+            <p>Фотосъемка</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-9.png" height="77" width="86">
+            </a>
+            <p>Аренда мебели</p>
+          </div>
+          <div class="options__item">
+            <a href="#" class="options__item__img animate-icon">
+              <img src="img/service-item-10.png" height="85" width="72">
+            </a>
+            <p>Шоу-программа</p>
+          </div>
+        </section>
+
+      </div>
+    </article>
+
     <!-- Результаты поиска -->
     <section class="results">
       <div class="container">
-        <form action="">
-          <p class="sorting">Сортировать результаты по 
-          <a href="#" class="sorting__link">названию</a>, 
-          <a href="#" class="sorting__link">стоимости</a>, 
-          <a href="#" class="sorting__link">количеству человек</a></p>
-        </form>
+
+        <h2 class="section-title">Выбор наших клиентов</h2>
 
         <!-- Один товар -->
         <div class="product-item row">
@@ -330,7 +435,7 @@
           </div>
         </div>
 
-        <a href="#" class="btn btn--bottom">Показать еще 10 из 80</a>
+        <a href="#" class="btn btn--bottom">Показать еще 9</a>
 
       </div>
     </section>
@@ -352,7 +457,7 @@
     </footer>
 
     <script src="js/libraries.js"></script>
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 
   </body>
