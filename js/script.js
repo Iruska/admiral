@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#review-slider").owlCarousel({
 	    navigation: true,
 	    slideSpeed: 400, 
-	    items: 3,
+	    items: 3
     });
 
     $(window).on('scroll', function(){
@@ -32,7 +32,7 @@ $(document).ready(function(){
         if( scrollpos > $('#js-animate-8').offset().top ){
             $('#js-animate-8').addClass('active');
         }
-	})
+	});
 
     $(".js-search-link").click(function(){
         $(".form-search__wrapper").toggleClass('active');

@@ -6,10 +6,21 @@
 	min-width: 1200px;
 	background: @main-color;
 
+	&--fixed{
+		width: 100%;
+		position: fixed;
+		top: 0; left: 0;
+		z-index: 999;
+	}
+
 	&__btn{
 		float: right;
 		text-align: right;
 	}
+}
+
+.header-margin{
+	margin-top: 52px;
 }
 
 .main-nav{
