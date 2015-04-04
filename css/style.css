@@ -382,7 +382,7 @@ label {
   cursor: pointer;
   font-size: 18px;
   line-height: 21px;
-  margin: 11px 0 4px;
+  margin: 13px 0 4px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1185,6 +1185,11 @@ a {
   padding: 0 0 90px;
   position: relative;
 }
+.application-form label span {
+  color: #9c9c9c;
+  font-weight: 300;
+  font-style: italic;
+}
 .application-form .section-title {
   margin-bottom: 20px;
 }
@@ -1233,17 +1238,17 @@ a {
    Анимации
    -------------------- */
 /* Движение фотографии */
-.photo--animate-1 {
+.animate-1 {
   background-size: 110%;
   -webkit-animation: 20s linear infinite panorama;
   animation: 20s linear infinite panorama;
 }
-.photo--animate-2 {
+.animate-2 {
   background-size: 110%;
   -webkit-animation: 15s ease infinite panorama;
   animation: 15s ease infinite panorama;
 }
-.photo--animate-3 {
+.animate-3 {
   background-attachment: fixed;
   background-size: cover;
 }
