@@ -6,10 +6,23 @@
 
 /* Движение фотографии */ 
 
-.photo{
-    -webkit-animation: 30s ease infinite panorama;
-    -moz-animation: 30s ease infinite panorama;
-    animation: 30s ease infinite panorama; 
+.photo--animate-1{
+    background-size: 110%;
+    -webkit-animation: 20s linear infinite panorama;
+    -moz-animation: 20s linear infinite panorama;
+    animation: 20s linear infinite panorama; 
+}
+
+.photo--animate-2{
+    background-size: 110%;
+    -webkit-animation: 15s ease infinite panorama;
+    -moz-animation: 15s ease infinite panorama;
+    animation: 15s ease infinite panorama; 
+}
+
+.photo--animate-3{
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 @-webkit-keyframes panorama{

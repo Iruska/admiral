@@ -942,17 +942,14 @@ a {
 .photo--bg2 {
   background: #89a3bc url(../img/bg-2.jpg) no-repeat;
   background-position: top center;
-  background-size: 120%;
 }
 .photo--bg3 {
   background: #023274 url(../img/bg-3.jpg) no-repeat;
   background-position: top center;
-  background-size: 120%;
 }
 .photo--bg4 {
   background: #7fa2ca url(../img/bg-4.jpg) no-repeat;
   background-position: top center;
-  background-size: 120%;
 }
 /* --------------------
     Как мы работаем
@@ -1227,9 +1224,19 @@ a {
    Анимации
    -------------------- */
 /* Движение фотографии */
-.photo {
-  -webkit-animation: 30s ease infinite panorama;
-  animation: 30s ease infinite panorama;
+.photo--animate-1 {
+  background-size: 110%;
+  -webkit-animation: 20s linear infinite panorama;
+  animation: 20s linear infinite panorama;
+}
+.photo--animate-2 {
+  background-size: 110%;
+  -webkit-animation: 15s ease infinite panorama;
+  animation: 15s ease infinite panorama;
+}
+.photo--animate-3 {
+  background-attachment: fixed;
+  background-size: cover;
 }
 @-webkit-keyframes panorama {
   0% {
