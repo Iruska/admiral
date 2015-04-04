@@ -46,7 +46,7 @@ button{ cursor: pointer; }
 	padding: 10px;
 	font-size: 16px;
 	border-radius: 1px;
-	.transition(0.2s);
+	.transition(0.1s);
 	border: 1px solid #c6c6c6;
 
 	&:focus{
@@ -117,14 +117,13 @@ textarea.custom-input{ height: 120px; }
     }
 }
 
-/* Кастомизация радио-кнопок */ 
+/* Кастомизация чесбоксов */ 
 .custom-check { display: none; }
 .custom-check + label {
 	margin: 0;
 	color: @main-color;
 	cursor: pointer;
 	font-size: 18px;
-	// .transition(0.1s);
 }
 .custom-check + label::before {
 	content: "";
@@ -149,21 +148,65 @@ textarea.custom-input{ height: 120px; }
 .custom-type-button{ display: none; }
 .custom-type-button + label{
 	margin: 0;
-	color: @main-color;
-	cursor: pointer;
 	font-size: 18px;
+	color: @main-color;
 	position: relative;
+	text-align: center;
+
+	span{
+		display: block;
+		margin-top: 10px;
+	}
 }
-.custom-type-button + label::before {
-	content: "";
-	width: 130px;
-	height: 66px;
-	// background-image: url(../img/boat-sprite.png);
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0; left: 50%;
-	transform: translateX(-50%);
+.custom-type-button:checked + label { color: #ff9900; }
+
+// .custom-type-button + label::before {
+// 	content: "";
+// 	height: 102px;
+// 	min-width: 110px;
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	background: url(../img/boat-sprite.png) no-repeat;
+// 	position: absolute;
+// 	bottom: 30px; left: 50%;
+// 	transform: translateX(-50%);
+// 	background-position: 0 0;
+// }
+
+
+/* Кастомизация поиска */
+.custom-search{
+	height: 60px;
+	font-size: 18px;
+	margin-top: 10px;
+	border-radius: 4px;
+	padding: 0 20px 0 50px;
+	background: url(../img/icon-loupe.png) no-repeat;
+	background-position: 1% 50%;
+
+	&:focus{
+		background-image: url(../img/icon-loupe--active.png);
+	}
+} 
+
+.search-wrapper{
+	width: 940px;
+	margin: 10px auto 0;
 }
+.search-example{
+	margin: 3px 0;
+	color: #949494;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: left;
+	a{ 
+		color: @main-color;
+		.transition(0.2s);
+		&:hover{ color: lighten(@main-color, 10%); }
+	}
+}
+
+
 
 /* Форма поиска */
 .form-search{
@@ -213,10 +256,9 @@ textarea.custom-input{ height: 120px; }
 	text-align: center;
 
 	&__column{
-		width: 14,2%;
+		width: 14.2%;
+		text-align: center;
 		display: inline-block;
 		vertical-align: top;
-		
 	}
-
 }

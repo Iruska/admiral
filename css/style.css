@@ -282,6 +282,7 @@ p {
   /* Позиционирование кнопки */
 }
 .btn--bottom {
+  z-index: 2;
   position: absolute;
   left: 0;
   right: 0;
@@ -289,6 +290,7 @@ p {
   margin: auto;
 }
 .btn--top {
+  z-index: 2;
   position: absolute;
   left: 0;
   right: 0;
@@ -345,7 +347,7 @@ p {
   color: #fff;
   font-size: 18px;
   min-width: 104px;
-  padding: 7px 10px;
+  padding: 6px 10px;
   text-align: center;
   border-radius: 3px;
   transition: 0.2s linear all;
@@ -405,7 +407,7 @@ button {
   padding: 10px;
   font-size: 16px;
   border-radius: 1px;
-  transition: 0.2s linear all;
+  transition: 0.1s linear all;
   border: 1px solid #c6c6c6;
 }
 .custom-input:focus {
@@ -475,7 +477,7 @@ textarea.custom-input {
   background: transparent;
   -webkit-appearance: none;
 }
-/* Кастомизация радио-кнопок */
+/* Кастомизация чесбоксов */
 .custom-check {
   display: none;
 }
@@ -514,22 +516,48 @@ textarea.custom-input {
 }
 .custom-type-button + label {
   margin: 0;
-  color: #006e7b;
-  cursor: pointer;
   font-size: 18px;
+  color: #006e7b;
   position: relative;
+  text-align: center;
 }
-.custom-type-button + label::before {
-  content: "";
-  width: 130px;
-  height: 66px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+.custom-type-button + label span {
+  display: block;
+  margin-top: 10px;
+}
+.custom-type-button:checked + label {
+  color: #ff9900;
+}
+/* Кастомизация поиска */
+.custom-search {
+  height: 60px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 0 20px 0 50px;
+  background: url(../img/icon-loupe.png) no-repeat;
+  background-position: 1% 50%;
+}
+.custom-search:focus {
+  background-image: url(../img/icon-loupe--active.png);
+}
+.search-wrapper {
+  width: 940px;
+  margin: 10px auto 0;
+}
+.search-example {
+  margin: 3px 0;
+  color: #949494;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+}
+.search-example a {
+  color: #006e7b;
+  transition: 0.2s linear all;
+}
+.search-example a:hover {
+  color: #009cae;
 }
 /* Форма поиска */
 .form-search {
@@ -577,7 +605,8 @@ textarea.custom-input {
   text-align: center;
 }
 .form-typeboat__column {
-  width: 14,2%;
+  width: 14.2%;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
 }
@@ -729,6 +758,7 @@ textarea.custom-input {
 }
 .product-item__table {
   width: 100%;
+  height: 159px;
   display: block;
   text-align: left;
   font-size: 18px;
@@ -941,14 +971,17 @@ a {
 .photo--bg2 {
   background: #89a3bc url(../img/bg-2.jpg) no-repeat;
   background-position: top center;
+  background-size: cover;
 }
 .photo--bg3 {
   background: #023274 url(../img/bg-3.jpg) no-repeat;
   background-position: top center;
+  background-size: cover;
 }
 .photo--bg4 {
   background: #7fa2ca url(../img/bg-4.jpg) no-repeat;
   background-position: top center;
+  background-size: cover;
 }
 /* --------------------
     Как мы работаем
@@ -1234,6 +1267,20 @@ a {
   font-size: 20px;
   line-height: 23px;
 }
+/* ------------------------
+   Поиск и подбор теплохода
+   ------------------------ */
+.selection .section-title {
+  margin-bottom: 0;
+}
+.selection__text {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.selection .row--inline {
+  margin-bottom: 15px;
+}
 /* --------------------
    Анимации
    -------------------- */
@@ -1309,16 +1356,16 @@ a {
             transform: rotate(0deg);
   }
   25% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
   }
   50% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   75% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
   }
   100% {
     -webkit-transform: rotate(0deg);

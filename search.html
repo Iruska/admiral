@@ -61,8 +61,9 @@
 
         <form action="">
           <fieldset class="form-typeboat">
-            <p class="">Выберите тип теплохода</p>
-            <ul class="row--inline">
+            <p class="selection__text">Выберите тип теплохода</p>
+            <!-- Иконки бекграундом -->
+            <!-- <ul class="row--inline">
               <li class="form-typeboat__column">
                 <input type="checkbox" name="type-boat" class="custom-type-button" id="guest50">
                 <label for="guest50">до 50 гостей</label>
@@ -91,14 +92,67 @@
                 <input type="checkbox" name="type-boat" class="custom-type-button" id="yacht">
                 <label for="yacht">Яхты</label>
               </li>
+            </ul> -->
+
+            <ul class="row--inline">
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="guest50">
+                <label for="guest50">
+                  <img src="img/boat-1.png" height="102" width="111" alt="">
+                  <span>до 50 гостей</span>
+                </label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="guest100">
+                <label for="guest100">
+                  <img src="img/boat-2.png" height="102" width="136" alt="">
+                  <span>до 100 гостей</span>
+                </label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="guest500">
+                <label for="guest500">
+                  <img src="img/boat-3.png" height="102" width="136" alt="">
+                  <span>от 100 до 500 гостей</span>
+                </label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="vip-boat">
+                <label for="vip-boat">
+                  <img src="img/boat-4.png" height="102" width="113" alt="">
+                  <span>VIP теплоходы</span>
+                </label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="panoram-boat">
+                <label for="panoram-boat">
+                  <img src="img/boat-5.png" height="102" width="114" alt="">
+                  <span>Панорамные</span>
+                </label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="mini-cruise">
+                <label for="mini-cruise">
+                  <img src="img/boat-6.png" height="102" width="128" alt="">
+                  <span>Мини-круизы</span>
+                </label>
+              </li>
+              <li class="form-typeboat__column">
+                <input type="checkbox" name="type-boat" class="custom-type-button" id="yacht">
+                <label for="yacht">
+                  <img src="img/boat-7.png" height="102" width="84" alt="">
+                  <span>Яхты</span>
+                </label>
+              </li>
             </ul>
 
             <!-- Поле поиска -->
-            <label class="" for="search-boat">Или введите его название</label>
-            <input type="search" class="custom-input custom-search" id="search-boat">
+            <div class="search-wrapper">
+              <label class="" for="search-boat">Или введите его название</label>
+              <input type="search" class="custom-input custom-search" id="search-boat">
+              <p class="search-example">Например, <a href="#">River Palace</a> или «<a href="#">Царица Елена</a>»</p>
+            </div>
             
-            <p>Например, <a href="#">River Palace</a> или «<a href="#">Царица Елена</a>»</p>
-
           </fieldset>
         </form>
 
