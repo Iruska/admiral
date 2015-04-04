@@ -238,7 +238,7 @@ p {
   display: inline-block;
   vertical-align: top;
   border: 2px solid #fff;
-  transition: 0.2s linear all;
+  transition: 0.1s linear all;
 }
 .btn-order:hover {
   color: #ff9900;
@@ -484,7 +484,6 @@ textarea.custom-input {
   color: #006e7b;
   cursor: pointer;
   font-size: 18px;
-  transition: 0.1s linear all;
 }
 .custom-check + label::before {
   content: "";
@@ -1105,6 +1104,7 @@ a {
   border: 2px solid #d5d5d5;
 }
 .reviews__wrapper p {
+  margin: 10px 0;
   font-size: 14px;
   line-height: 16px;
   font-style: italic;
