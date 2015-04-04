@@ -534,7 +534,7 @@ textarea.custom-input {
   font-size: 18px;
   margin-top: 10px;
   border-radius: 4px;
-  padding: 0 20px 0 50px;
+  padding: 0 20px 0 55px;
   background: url(../img/icon-loupe.png) no-repeat;
   background-position: 1% 50%;
 }
@@ -779,9 +779,10 @@ textarea.custom-input {
   border-top: 1px solid #c7c7c7;
 }
 .product-item__table td:not(:first-child) {
-  padding: 5px 20px 5px 15px;
+  padding: 4px 20px 4px 15px;
 }
 .results {
+  min-width: 1200px;
   padding: 40px 0 55px;
   position: relative;
 }
@@ -1141,7 +1142,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 500;
 }
 .reviews__wrapper:before {
   content: "";
@@ -1233,6 +1234,7 @@ a {
    Дополнительные услуги
    ---------------------- */
 .options {
+  min-width: 1200px;
   text-align: center;
 }
 .options__text {
@@ -1270,6 +1272,9 @@ a {
 /* ------------------------
    Поиск и подбор теплохода
    ------------------------ */
+.selection {
+  min-width: 1200px;
+}
 .selection .section-title {
   margin-bottom: 0;
 }
