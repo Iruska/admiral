@@ -714,6 +714,15 @@ textarea.custom-input {
   display: inline-block;
   vertical-align: top;
 }
+/* Лейбл, что поля обязательны */
+.field-required {
+  color: #9c9c9c;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  font-style: italic;
+  text-align: center;
+}
 /* ---------------------------
 	Главная навигация на сайте
    --------------------------- */
@@ -1036,6 +1045,15 @@ html {
   color: #9c9c9c;
   font-weight: 300;
   font-style: italic;
+}
+/* -----------------------------------
+   Модальное окно - заказать звонок
+   ----------------------------------- */
+.modal-callback .modal__container {
+  width: 455px;
+}
+.modal-callback .modal__title {
+  font-size: 28px;
 }
 *,
 *:after,
