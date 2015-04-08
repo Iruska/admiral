@@ -120,6 +120,7 @@ p {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 /* Благодарственное письмо */
 .letter-link {
@@ -152,16 +153,15 @@ p {
 }
 /* Ссылка вернуться назад */
 .go-back {
-  float: left;
   color: #a0a0a0;
   text-align: left;
   font-size: 18px;
   font-weight: 300;
   line-height: 38px;
   text-transform: none;
-  display: inline-block;
-  vertical-align: middle;
   transition: 0.2s linear all;
+  position: absolute;
+  left: 0;
 }
 .go-back:before {
   content: "";
@@ -265,14 +265,18 @@ p {
   width: 150px;
   height: 100px;
   margin: 0 20px;
+  cursor: pointer;
   border: 2px solid transparent;
 }
 #sync2 .item img {
   width: 100%;
   height: 100%;
 }
+#sync2 .item:hover {
+  background-color: #ff9900;
+}
 #sync2 .synced .item {
-  background: #0c83e7;
+  background-color: #006e7b;
 }
 /* Доп. стили для стрелок слайдера */
 #sync1 .owl-prev,
@@ -1084,6 +1088,12 @@ a {
   background-position: top center;
   background-size: cover;
 }
+.photo--bg5 {
+  min-height: 450px;
+  background: #d9d6cf url(../img/bg-5.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 /* --------------------
     Как мы работаем
    -------------------- */
@@ -1389,10 +1399,115 @@ a {
 /* --------------------
    Карточка товара
    -------------------- */
+.card {
+  min-width: 1200px;
+}
 .card__slider {
   width: 1000px;
   margin: 0 auto 30px;
   text-align: center;
+}
+.card .description-table {
+  width: 1000px;
+  margin: 40px auto;
+}
+.card .description-table .product-item__table {
+  display: table;
+}
+.card .description-table__text {
+  color: #9d9d9d;
+  font-size: 18px;
+  font-style: italic;
+}
+/* --------------------
+   Спецпредложения
+   -------------------- */
+.specials {
+  min-width: 1200px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.specials .container {
+  width: 1020px;
+}
+.specials__wrapper {
+  padding: 10px 20px;
+  border: 2px dashed #006e7b;
+}
+.specials__wrapper p {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 19px 0;
+}
+/* ---------------------
+   Особенности теплохода
+   --------------------- */
+.particulars {
+  min-width: 1200px;
+  text-align: center;
+}
+.particulars__text {
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.food-service {
+  width: 1000px;
+  margin: 30px auto;
+}
+.food-service__item {
+  transition: 0.2s linear all;
+  display: inline-block;
+  vertical-align: top;
+}
+.food-service__item img {
+  width: 84px;
+}
+.food-service__item p {
+  color: #006e7b;
+  font-size: 18px;
+}
+.food-service__item:hover {
+  opacity: 0.7;
+}
+/* --------------------
+   Мероприятия
+   -------------------- */
+.measures {
+  min-width: 1200px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.measures .section-title {
+  margin-bottom: 0;
+}
+.measures__item {
+  width: 258px;
+  margin: 20px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.measures__item__wrapper {
+  width: 258px;
+  margin: 10px 0;
+}
+.measures__item__wrapper img {
+  width: 100%;
+}
+.measures__item .img-shadow:before,
+.measures__item .img-shadow:after {
+  bottom: 9px;
+}
+.measures__item__link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #006e7b;
+  transition: 0.1s linear all;
+  border-bottom: 1px solid #006e7b;
+}
+.measures__item__link:hover {
+  border-bottom-color: transparent;
 }
 /* --------------------
    Анимации

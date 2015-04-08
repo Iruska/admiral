@@ -50,20 +50,16 @@ $(document).ready(function(){
      
       sync1.owlCarousel({
         singleItem : true,
-        slideSpeed : 1000,
+        slideSpeed : 500,
         navigation: true,
-        pagination:false,
+        pagination: false,
         afterAction : syncPosition,
         responsiveRefreshRate : 200,
       });
      
       sync2.owlCarousel({
         items : 5,
-        // itemsDesktop      : [1199,10],
-        // itemsDesktopSmall     : [979,10],
-        // itemsTablet       : [768,8],
-        // itemsMobile       : [479,4],
-        pagination:false,
+        pagination: false,
         responsiveRefreshRate : 100,
         afterInit : function(el){
           el.find(".owl-item").eq(0).addClass("synced");
