@@ -959,7 +959,7 @@ textarea.custom-input {
             transform: translateX(0);
   }
 }
-/* Стили */
+/* Общие стили */
 body,
 html {
   height: 100%;
@@ -1026,7 +1026,10 @@ html {
   display: inline-block;
   vertical-align: middle;
 }
-.modal-order__form .col:not(:last-child) {
+/* -----------------------------------
+   Модальное окно - заказать теплоход
+   ----------------------------------- */
+.modal-order__row .col:not(:last-child) {
   padding-right: 22px;
 }
 .modal-order label span {
