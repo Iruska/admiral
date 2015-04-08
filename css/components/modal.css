@@ -1,0 +1,129 @@
+/* --------------------
+
+   -------------------- */
+/* Блок анимации */
+@-webkit-keyframes animate-modal {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animate-modal {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animate-overlay {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animate-overlay {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Стили */
+body,
+html {
+  height: 100%;
+}
+fieldset {
+  border: 0;
+}
+.body--hidden {
+  overflow: hidden;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: none;
+}
+.modal-overlay--open {
+  display: block;
+  -webkit-animation: animate-overlay 0.1s;
+  animation: animate-overlay 0.1s;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  vertical-align: middle;
+  display: none;
+}
+.modal--open {
+  display: table;
+  -webkit-animation: animate-modal 0.6s;
+  animation: animate-modal 0.6s;
+}
+.modal_wrapper {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.modal_container {
+  width: 760px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+}
+.modal_container--no-padding {
+  padding: 0;
+}
+.modal_close {
+  position: absolute;
+  top: 24px;
+  right: 31px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/context/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: -330px -285px;
+  font-size: 0;
+}
+.modal_close:hover {
+  opacity: .6;
+}
+.modal_column {
+  background-color: #fff;
+  padding: 25px!important;
+  border-right: 1px solid #eee;
+}
+.modal_column:last-child {
+  border: 0;
+}
+.modal_column--grey {
+  background-color: #fafafa;
+}
+.modal_title {
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "proxima-light", Arial, sans-serif;
+}
