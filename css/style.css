@@ -1775,6 +1775,11 @@ a {
 .review-block .section-title {
   margin-bottom: 10px;
 }
+.review-block .reviews__wrapper > p {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 14px;
+}
 .review-block .reviews__item {
   width: 1000px;
   margin: 0 auto;
@@ -1783,6 +1788,19 @@ a {
 .review-block .reviews__wrapper {
   min-height: 150px;
   padding: 15px 40px;
+}
+.review-block .letter-link,
+.review-block .reviews__wrapper:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.review-block .author__about {
+  text-align: left;
+}
+.review-block .author__about__prof {
+  width: 250px;
 }
 /* --------------------
    Анимации
