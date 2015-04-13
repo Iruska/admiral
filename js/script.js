@@ -8,37 +8,37 @@ $(document).ready(function(){
     });
 
     // анимация появления блоков
-    $(window).on('scroll', function(){
-		var scrollpos = $(this).scrollTop() + ($(window).height()/2+200);
+  //   $(window).on('scroll', function(){
+		// var scrollpos = $(this).scrollTop() + ($(window).height()/2+200);
 
-      if ( $('#js-animate-1') && $('#js-animate-2') && $('#js-animate-3') && $('#js-animate-4') && $('#js-animate-5') && $('#js-animate-6') && $('#js-animate-7') && $('#js-animate-8') ){
+  //     if ( $('#js-animate-1') && $('#js-animate-2') && $('#js-animate-3') && $('#js-animate-4') && $('#js-animate-5') && $('#js-animate-6') && $('#js-animate-7') && $('#js-animate-8') ){
 
-  		if( (scrollpos > $('#js-animate-1').offset().top) ){
-  			$('#js-animate-1').addClass('active');
-  		}
-  		if( scrollpos > $('#js-animate-2').offset().top ){
-  			$('#js-animate-2').addClass('active');
-  		}
-  		if( scrollpos > $('#js-animate-3').offset().top ){
-  			$('#js-animate-3').addClass('active');
-  		}
-          if( scrollpos > $('#js-animate-4').offset().top ){
-              $('#js-animate-4').addClass('active');
-          }
-          if( scrollpos > $('#js-animate-5').offset().top ){
-              $('#js-animate-5').addClass('active');
-          }
-          if( scrollpos > $('#js-animate-6').offset().top ){
-              $('#js-animate-6').addClass('active');
-          }
-          if( scrollpos > $('#js-animate-7').offset().top ){
-              $('#js-animate-7').addClass('active');
-          }
-          if( scrollpos > $('#js-animate-8').offset().top ){
-              $('#js-animate-8').addClass('active');
-          }
-      }
-  });
+  // 		if( (scrollpos > $('#js-animate-1').offset().top) ){
+  // 			$('#js-animate-1').addClass('active');
+  // 		}
+  // 		if( scrollpos > $('#js-animate-2').offset().top ){
+  // 			$('#js-animate-2').addClass('active');
+  // 		}
+  // 		if( scrollpos > $('#js-animate-3').offset().top ){
+  // 			$('#js-animate-3').addClass('active');
+  // 		}
+  //         if( scrollpos > $('#js-animate-4').offset().top ){
+  //             $('#js-animate-4').addClass('active');
+  //         }
+  //         if( scrollpos > $('#js-animate-5').offset().top ){
+  //             $('#js-animate-5').addClass('active');
+  //         }
+  //         if( scrollpos > $('#js-animate-6').offset().top ){
+  //             $('#js-animate-6').addClass('active');
+  //         }
+  //         if( scrollpos > $('#js-animate-7').offset().top ){
+  //             $('#js-animate-7').addClass('active');
+  //         }
+  //         if( scrollpos > $('#js-animate-8').offset().top ){
+  //             $('#js-animate-8').addClass('active');
+  //         }
+  //     }
+  //   });
 
     // открытие и закрытие формы
     $(".js-search-link").click(function(){

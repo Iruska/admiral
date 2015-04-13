@@ -925,6 +925,51 @@ textarea.custom-input {
   left: auto;
 }
 /* --------------------
+   Портфолио
+   -------------------- */
+.portfolio {
+  position: relative;
+}
+.portfolio__item {
+  width: 22%;
+  margin-left: 2%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+.portfolio__item:first-child {
+  margin-left: 0;
+}
+.portfolio__item__head {
+  bottom: 0;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  position: absolute;
+  background-color: #ff9900;
+}
+.portfolio__item__wrapper {
+  width: 258px;
+  height: 180px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.portfolio__item__wrapper img {
+  width: 100%;
+}
+.portfolio__item__link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #006e7b;
+  transition: 0.1s linear all;
+  margin-top: 10px;
+  border-bottom: 1px solid #006e7b;
+}
+.portfolio__item__link:hover {
+  border-bottom-color: transparent;
+}
+/* --------------------
    Стили модальных окон
    -------------------- */
 /* Блок анимации */
