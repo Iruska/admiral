@@ -62,14 +62,6 @@
 .row--inline {
   font-size: 0;
 }
-[class*=col-] .row [class*=col-]:first-child:last-child {
-  padding-left: 0;
-  padding-right: 0;
-}
-[class*=col-] .row (([class*=col-]:not:first-child):not):last-child {
-  margin-left: 0;
-  margin-right: 0;
-}
 .pull-left {
   float: left;
 }
@@ -930,40 +922,68 @@ textarea.custom-input {
 .portfolio {
   position: relative;
 }
+.portfolio .row {
+  padding-bottom: 80px;
+}
+.portfolio .section-title {
+  margin-bottom: 5px;
+}
 .portfolio__item {
-  width: 22%;
-  margin-left: 2%;
+  width: 257px;
+  margin: 20px;
+  min-height: 300px;
   text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-}
-.portfolio__item:first-child {
-  margin-left: 0;
-}
-.portfolio__item__head {
-  bottom: 0;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 20px;
-  position: absolute;
-  background-color: #ff9900;
-}
-.portfolio__item__wrapper {
-  width: 258px;
-  height: 180px;
-  position: relative;
   display: inline-block;
   vertical-align: top;
 }
+.portfolio__item__head {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  min-height: 40px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+  font-style: italic;
+  padding-left: 47px;
+  position: relative;
+  background-color: #ff9900;
+}
+.portfolio__item__head:before {
+  content: "";
+  width: 24px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../img/icon-boat.png) no-repeat;
+}
+.portfolio__item__wrapper {
+  width: 257px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
 .portfolio__item__wrapper img {
   width: 100%;
+  display: block;
+  transition: 0.2s linear all;
+}
+.portfolio__item .img-shadow:before,
+.portfolio__item .img-shadow:after {
+  width: 46%;
+  bottom: 8px;
 }
 .portfolio__item__link {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
   color: #006e7b;
   transition: 0.1s linear all;
-  margin-top: 10px;
   border-bottom: 1px solid #006e7b;
 }
 .portfolio__item__link:hover {
