@@ -525,6 +525,8 @@ a{
 .card{
     min-width: 1200px;
 
+    .section-title{ margin: 5px 0; }
+
     &__slider{
         width: 1000px;
         margin: 0 auto 30px;
@@ -626,11 +628,15 @@ a{
         &__wrapper{
             width: 258px;
             margin: 10px 0;
+            display: inline-block;
+            vertical-align: top;
+            
             img{ width: 100%; }
         }
 
         .img-shadow:before, .img-shadow:after{
-            bottom: 9px;
+            width: 46%;
+            bottom: 16px;
         }
 
         &__link{
