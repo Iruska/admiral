@@ -649,3 +649,80 @@ a{
         }
     }
 }
+
+/* --------------------
+   Страница работы
+   -------------------- */ 
+
+/* Описание */
+.info-meet{
+    text-align: center;
+    
+    .section-title{
+        margin: 5px 0;
+        padding: 0 15%;
+    }
+
+    &__boat, &__date{
+        color: #fff;
+        padding: 9px;
+        margin: 10px 5px;
+        min-width: 130px;
+        font-style: italic;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 35px;
+    }
+
+    &__boat{
+        background-color: @orange-color;
+        background-image: url(../img/icon-boat.png);
+        background-repeat: no-repeat;
+        background-position: 12% 50%;   
+    }
+
+    &__date{
+        background-color: @main-color;
+        background-image: url(../img/icon-calendar.png);
+        background-repeat: no-repeat;
+        background-position: 10% 45%;
+    }
+
+    &__text{
+        font-size: 18px;
+        line-height: 21px;
+    }
+} 
+
+/* Видео */ 
+.video-meet{
+
+    .section-title{ margin-bottom: 12px; }
+
+    &__wrapper{
+        width: 766px;
+        margin: 0 auto;
+        min-height: 430px;
+    }
+}
+
+
+/* Один отзыв */ 
+.review-block{
+    position: relative;
+    padding-bottom: 70px;
+
+    .section-title{ margin-bottom: 10px; }
+
+    .reviews__item{
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;   
+    }
+
+    .reviews__wrapper{
+        min-height: 150px;
+        padding: 15px 40px;
+    }
+
+}

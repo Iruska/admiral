@@ -1721,6 +1721,70 @@ a {
   border-bottom-color: transparent;
 }
 /* --------------------
+   Страница работы
+   -------------------- */
+/* Описание */
+.info-meet {
+  text-align: center;
+}
+.info-meet .section-title {
+  margin: 5px 0;
+  padding: 0 15%;
+}
+.info-meet__boat,
+.info-meet__date {
+  color: #fff;
+  padding: 9px;
+  margin: 10px 5px;
+  min-width: 130px;
+  font-style: italic;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 35px;
+}
+.info-meet__boat {
+  background-color: #ff9900;
+  background-image: url(../img/icon-boat.png);
+  background-repeat: no-repeat;
+  background-position: 12% 50%;
+}
+.info-meet__date {
+  background-color: #006e7b;
+  background-image: url(../img/icon-calendar.png);
+  background-repeat: no-repeat;
+  background-position: 10% 45%;
+}
+.info-meet__text {
+  font-size: 18px;
+  line-height: 21px;
+}
+/* Видео */
+.video-meet .section-title {
+  margin-bottom: 12px;
+}
+.video-meet__wrapper {
+  width: 766px;
+  margin: 0 auto;
+  min-height: 430px;
+}
+/* Один отзыв */
+.review-block {
+  position: relative;
+  padding-bottom: 70px;
+}
+.review-block .section-title {
+  margin-bottom: 10px;
+}
+.review-block .reviews__item {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.review-block .reviews__wrapper {
+  min-height: 150px;
+  padding: 15px 40px;
+}
+/* --------------------
    Анимации
    -------------------- */
 /* Движение фотографии */
