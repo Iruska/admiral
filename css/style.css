@@ -1005,6 +1005,9 @@ textarea.custom-input {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.gallery [class*=col-] {
+  float: none;
+}
 .gallery .img-1 {
   height: 400px;
 }
