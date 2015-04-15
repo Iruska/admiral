@@ -926,7 +926,7 @@ textarea.custom-input {
   padding-bottom: 80px;
 }
 .portfolio .section-title {
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 .portfolio__item {
   width: 257px;
@@ -988,6 +988,39 @@ textarea.custom-input {
 }
 .portfolio__item__link:hover {
   border-bottom-color: transparent;
+}
+/* Стили для галереи фотографий */
+.gallery__item {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #000;
+  border: 2px solid #fff;
+}
+.gallery__item img {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.gallery .img-1 {
+  height: 400px;
+}
+.gallery .img-2 {
+  height: 385px;
+}
+.gallery .img-3 {
+  height: 224px;
+}
+.gallery .img-4 {
+  height: 190px;
+}
+.gallery .img-2.col-4 img {
+  -webkit-transform: translateY(-50%) scale(1.5);
+  -ms-transform: translateY(-50%) scale(1.5);
+  transform: translateY(-50%) scale(1.5);
 }
 /* --------------------
    Стили модальных окон
@@ -1795,6 +1828,9 @@ a {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.review-block .author {
+  padding-left: 50px;
 }
 .review-block .author__about {
   text-align: left;

@@ -6,7 +6,7 @@
     position: relative;
     .row{ padding-bottom: 80px; }
 
-    .section-title{ margin-bottom: 5px; }
+    .section-title{ margin: 5px 0; }
 
     &__item{
         width: 257px;
@@ -70,3 +70,40 @@
         }
     }
 }
+
+/* Стили для галереи фотографий */
+
+.gallery{
+
+    &__item{
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        border: 2px solid #000;
+        border: 2px solid #fff;
+
+        img{
+            position: relative;
+            width: 100%; top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+
+    .img-1{ height: 400px; }
+    .img-2{ height: 385px; }
+    .img-3{ height: 224px; }
+    .img-4{ height: 190px; }
+    .img-2.col-4 img{ 
+        -webkit-transform: translateY(-50%) scale(1.5);
+        -moz-transform: translateY(-50%) scale(1.5);
+        -ms-transform: translateY(-50%) scale(1.5);
+        -o-transform: translateY(-50%) scale(1.5);
+        transform: translateY(-50%) scale(1.5);
+        transform: translateY(-50%) scale(1.5); 
+    }
+
+} 
