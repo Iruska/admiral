@@ -31,7 +31,7 @@
           <a href="#" class="main-nav__link">Контакты</a>
         </nav>
         <div class="page-header__btn col-2">
-          <a href="#" class="btn-order">Заказать теплоход</a>
+          <a href="#" class="btn-order js-get-modal" data-modal="modal-order">Заказать теплоход</a>
         </div>
       </div>
     </header>
@@ -165,6 +165,58 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно - Заказать теплоход -->
+    <div class="modal-overlay"></div>
+    <div class="modal modal-order">
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <a href="#" class="modal__close js-close-modal">Закрыть окно</a>
+          <h2 class="section-title modal__title">Заказать теплоход</h2>
+
+          <form action="#" method="post">
+            <label for="name-2">Ваше имя</label>
+            <input type="text" class="custom-input" id="name-2" required>
+
+            <div class="row modal-order__row">
+              <div class="col col-3">
+                <label for="telephone-2">Телефон</label>
+                <input type="text" class="custom-input" id="telephone-2" required>
+              </div>
+              <div class="col col-3">
+                <label for="email-2">E-mail</label>
+                <input type="text" class="custom-input" id="email-2" required>
+              </div>
+              <div class="col col-3">
+                <label for="data-2">Дата мероприятия</label>
+                <input type="date" class="custom-input custom-date" id="data-2" required>
+              </div>
+              <div class="col col-3">
+                <label for="guest-2">Количество гостей</label>
+                <div class="custom-select">
+                  <select name="" id="guest-2" required>
+                    <option value="">1</option>
+                    <option value="">20</option>
+                    <option value="">100</option>
+                    <option value="">1000</option>
+                    <option value="">20000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <label for="choice-boat-2">Теплоход</label>
+            <input type="text" class="custom-input" id="choice-boat-2" required>
+
+            <label for="comment-2">Комментарий</label>
+            <textarea class="custom-input" id="comment-2"></textarea>
+
+            <button type="submit" class="custom-button">Отправить заявку</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
 
     <script src="js/libraries.js"></script>
     <script src="js/owl.carousel.min.js"></script>
