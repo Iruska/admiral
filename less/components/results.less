@@ -23,7 +23,25 @@
 		margin-bottom: 2px;
 		display: inline-block;
 		vertical-align: top;
-		border-bottom: 1px solid @main-color;
+		// border-bottom: 1px solid @main-color;
+
+		span{
+			border-bottom: 1px solid @main-color;
+		}
+
+		&--vip{
+			position: relative;
+			&:after{
+				content: "";
+				width: 44px;
+				height: 23px;
+				margin-left: 10px;
+				display: inline-block;
+				vertical-align: middle;
+				background-image: url(../../img/vip-icon.png);
+				background-repeat: no-repeat;
+			}
+		}
 
 		&:hover { color: lighten(@main-color, 10%); }
 		&:active{ color: darken(@main-color, 5%); }

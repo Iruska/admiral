@@ -117,15 +117,22 @@
 	text-align: center;
 
 	&__link{
+		padding: 0 5px;
 		font-size: 24px;
 		line-height: 26px;
 		color: @main-color;
-		.transition(0.2s);
+		.transition(0.1s);
+		border-radius: 3px;
 		border-bottom: 1px dashed @main-color;
 		&:hover{
-			color: lighten(@main-color, 5%);
-			border-bottom-color: transparent;
+			color: @orange-color;
+			border-bottom-color: @orange-color;
 		}
+	}
+	.active{
+		color: #fff;
+		background-color: @orange-color;
+		border-bottom-color: transparent;
 	}
 }
 
