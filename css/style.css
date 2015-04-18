@@ -719,6 +719,35 @@ textarea.custom-input {
   font-style: italic;
   text-align: center;
 }
+/* Стили для автокомплита */
+.autocomplete-suggestions {
+  overflow: auto;
+  cursor: pointer;
+  color: #006e7b;
+  border: 1px solid #c6c6c6;
+  background: rgba(255, 255, 255, 0.95);
+}
+.autocomplete-suggestion {
+  width: 100%;
+  padding: 7px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-selected {
+  color: #fff;
+  background: #006e7b;
+}
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #ff9900;
+}
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #c6c6c6;
+}
 /* ---------------------------
 	Главная навигация на сайте
    --------------------------- */

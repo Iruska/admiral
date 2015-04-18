@@ -271,4 +271,38 @@ textarea.custom-input{ height: 120px; }
 	line-height: 21px;
 	font-style: italic;
 	text-align: center;
-} 
+}
+
+
+/* Стили для автокомплита */ 
+.autocomplete-suggestions { 
+	overflow: auto; 
+	cursor: pointer;
+	color: @main-color;
+	border: 1px solid #c6c6c6; 
+	background: rgba(255,255,255,0.95); 
+}
+
+.autocomplete-suggestion { 
+	width: 100%;
+	padding: 7px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 40px;
+	white-space: nowrap; 
+	overflow: hidden; 
+}
+
+.autocomplete-selected { 
+	color: #fff;
+	background: @main-color; 
+}
+
+.autocomplete-suggestions strong { 
+	font-weight: normal;
+	color: @orange-color; 
+}
+
+// .autocomplete-group { padding: 2px 5px; }
+
+.autocomplete-group strong { display: block; border-bottom: 1px solid #c6c6c6; }
