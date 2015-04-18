@@ -222,8 +222,11 @@ textarea.custom-input{ height: 120px; }
 	
 	.col-3{
 		width: 21%;
-		margin-right: 5%;
-		&:last-child{ margin-right: 0; }
+		margin-right: 72px;
+		&:last-child{ 
+			width: 18%;
+			margin-right: 0; 
+		}
 	}
 	
 	&__wrapper{
@@ -240,6 +243,11 @@ textarea.custom-input{ height: 120px; }
 		margin: 10px 0 10px;
 		font-size: 24px;
 		line-height: 30px;
+		span{
+			display: block;
+			font-size: 18px;
+			line-height: 21px;
+		}
 	}
 
 	&__list{
@@ -247,6 +255,20 @@ textarea.custom-input{ height: 120px; }
 			display: block;
 			margin: 10px 0;
 		}
+	}
+}
+
+.row--input-search{
+	margin: 15px 0 30px!important;
+
+	label{
+		width: 295px;
+		float: left;
+	}
+	.custom-search{
+		width: 845px;
+		float: right;
+		margin-top: 6px;
 	}
 }
 
@@ -303,6 +325,7 @@ textarea.custom-input{ height: 120px; }
 	color: @orange-color; 
 }
 
-// .autocomplete-group { padding: 2px 5px; }
-
-.autocomplete-group strong { display: block; border-bottom: 1px solid #c6c6c6; }
+.autocomplete-group strong { 
+	display: block; 
+	border-bottom: 1px solid #c6c6c6; 
+}

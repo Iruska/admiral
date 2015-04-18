@@ -675,9 +675,10 @@ textarea.custom-input {
 }
 .form-search .col-3 {
   width: 21%;
-  margin-right: 5%;
+  margin-right: 72px;
 }
 .form-search .col-3:last-child {
+  width: 18%;
   margin-right: 0;
 }
 .form-search__wrapper {
@@ -695,9 +696,26 @@ textarea.custom-input {
   font-size: 24px;
   line-height: 30px;
 }
+.form-search__item span {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+}
 .form-search__list li {
   display: block;
   margin: 10px 0;
+}
+.row--input-search {
+  margin: 15px 0 30px!important;
+}
+.row--input-search label {
+  width: 295px;
+  float: left;
+}
+.row--input-search .custom-search {
+  width: 845px;
+  float: right;
+  margin-top: 6px;
 }
 /* Форма - типы теплоходов */
 .form-typeboat {
