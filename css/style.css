@@ -274,27 +274,28 @@ p {
 #sync1 .owl-prev,
 #sync1 .owl-next {
   font-size: 0;
-  width: 43px;
-  height: 154px;
+  width: 47px;
+  height: 160px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url(../img/card-slider-arrows.png) no-repeat;
+  background: url(../img/card-slider-arrows2.png) no-repeat;
 }
 #sync1 .owl-prev {
   left: -70px;
+  background-position: 0px 1px;
 }
 #sync1 .owl-prev:hover {
-  background-position: 0 -180px;
+  background-position: 0 -162px;
 }
 #sync1 .owl-next {
   right: -70px;
-  background-position: -65px 0;
+  background-position: -67px 1px;
 }
 #sync1 .owl-next:hover {
-  background-position: -65px -180px;
+  background-position: -67px -162px;
 }
 /* Тень у картинок */
 #sync1 .item {
@@ -1790,7 +1791,7 @@ a {
   background-repeat: no-repeat;
   background-position: 10% 45%;
 }
-.info-meet__text {
+.info-meet p {
   font-size: 18px;
   line-height: 21px;
 }
