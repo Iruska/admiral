@@ -7,39 +7,6 @@ $(document).ready(function(){
 	    items: 3
     });
 
-    // анимация появления блоков
-  //   $(window).on('scroll', function(){
-		// var scrollpos = $(this).scrollTop() + ($(window).height()/2+200);
-
-  //     if ( $('#js-animate-1') && $('#js-animate-2') && $('#js-animate-3') && $('#js-animate-4') && $('#js-animate-5') && $('#js-animate-6') && $('#js-animate-7') && $('#js-animate-8') ){
-
-  // 		if( (scrollpos > $('#js-animate-1').offset().top) ){
-  // 			$('#js-animate-1').addClass('active');
-  // 		}
-  // 		if( scrollpos > $('#js-animate-2').offset().top ){
-  // 			$('#js-animate-2').addClass('active');
-  // 		}
-  // 		if( scrollpos > $('#js-animate-3').offset().top ){
-  // 			$('#js-animate-3').addClass('active');
-  // 		}
-  //         if( scrollpos > $('#js-animate-4').offset().top ){
-  //             $('#js-animate-4').addClass('active');
-  //         }
-  //         if( scrollpos > $('#js-animate-5').offset().top ){
-  //             $('#js-animate-5').addClass('active');
-  //         }
-  //         if( scrollpos > $('#js-animate-6').offset().top ){
-  //             $('#js-animate-6').addClass('active');
-  //         }
-  //         if( scrollpos > $('#js-animate-7').offset().top ){
-  //             $('#js-animate-7').addClass('active');
-  //         }
-  //         if( scrollpos > $('#js-animate-8').offset().top ){
-  //             $('#js-animate-8').addClass('active');
-  //         }
-  //     }
-  //   });
-
     // открытие и закрытие формы
     $(".js-search-link").click(function(){
         $(".form-search__wrapper").toggleClass('active');
@@ -154,6 +121,25 @@ $(document).ready(function(){
       params: { country: 'Yes'}, // Дополнительные параметры
       onSelect: function(data, value){ }, // Callback функция, срабатывающая на выбор одного из предложенных вариантов,
       lookup: ['Яхта Palma', 'Теплоход Radisson', 'Теплоход Баттерфляй'] // Список вариантов для локального автозаполнения
+    });
+
+
+    // параллакс эффект (пробный)
+    $(window).scroll(function() {
+    var st = $(this).scrollTop();
+
+      $(".photo--bg2 .photo__title").css({
+        "transform" : "translate(0%, -" + st/5 + "%"
+      });
+
+      $(".photo--bg3 .photo__title").css({
+        "transform" : "translate(0%, " + st/8 + "%"
+      });
+
+      $(".photo--bg4 .photo__title").css({
+        "transform" : "translate(0%, -" + st/15 + "%"
+      });
+
     });
 
 });

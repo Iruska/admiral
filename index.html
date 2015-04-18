@@ -123,7 +123,7 @@
     </article>
 
     <!-- Блок с беграундом -->
-    <section class="photo photo--bg2 animate-2">
+    <section class="photo photo--bg2 animate-parallax">
       <div class="container">
         <h3 class="photo__title photo__title--bottom big-title">Откройте Москву<br/> с совершенно другого ракурса</h3>
       </div>
@@ -177,7 +177,7 @@
     </article>
 
     <!-- Блок с беграундом -->
-    <section class="photo photo--bg3 animate-3">
+    <section class="photo photo--bg3 animate-parallax">
       <div class="container">
         <h3 class="photo__title photo__title--top big-title">Огни большого города<br/> ждут вас</h3>
       </div>
@@ -277,7 +277,7 @@
     </article>
 
     <!-- Блок с беграундом -->
-    <section class="photo photo--bg4 animate-3">
+    <section class="photo photo--bg4 animate-parallax">
       <div class="container">
         <h3 class="photo__title photo__title--bottom big-title">Работаем<br/> круглый год</h3>
       </div>
@@ -437,7 +437,7 @@
     </article>
 
     <!-- Подвал сайта -->
-    <footer class="page-footer animate-3">
+    <footer class="page-footer animate-parallax">
       <div class="container">
         <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
         <div class="contacts">
@@ -506,7 +506,6 @@
       </div>
     </div>
 
-
     <!-- Модальное окно - Заказать обратный звонок -->
     <div class="modal-overlay"></div>
     <div class="modal modal-callback">
@@ -533,7 +532,44 @@
 
     <script src="js/libraries.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.autocomplete.js"></script>
     <script src="js/script.js"></script>
 
+    <script>
+
+    // анимация появления блоков
+    $(window).on('scroll', function(){
+      var scrollpos = $(this).scrollTop() + ($(window).height()/2+200);
+
+        if ( $('#js-animate-1') && $('#js-animate-2') && $('#js-animate-3') && $('#js-animate-4') && $('#js-animate-5') && $('#js-animate-6') && $('#js-animate-7') && $('#js-animate-8') ){
+
+          if( (scrollpos > $('#js-animate-1').offset().top) ){
+           $('#js-animate-1').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-2').offset().top ){
+           $('#js-animate-2').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-3').offset().top ){
+           $('#js-animate-3').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-4').offset().top ){
+              $('#js-animate-4').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-5').offset().top ){
+              $('#js-animate-5').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-6').offset().top ){
+              $('#js-animate-6').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-7').offset().top ){
+              $('#js-animate-7').addClass('active');
+          }
+          if( scrollpos > $('#js-animate-8').offset().top ){
+              $('#js-animate-8').addClass('active');
+          }
+        }
+      });
+
+    </script>
   </body>
 </html>

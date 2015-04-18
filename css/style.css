@@ -1410,11 +1410,11 @@ a {
   position: absolute;
 }
 .photo__title--bottom {
-  bottom: 15px;
+  bottom: -230px;
   right: 0;
 }
 .photo__title--top {
-  top: 40px;
+  top: -220px;
   right: 0;
 }
 .photo--bg2 {
@@ -1958,7 +1958,9 @@ a {
   -webkit-animation: 15s ease infinite panorama;
   animation: 15s ease infinite panorama;
 }
-.animate-3 {
+.animate-parallax {
+  position: relative;
+  overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1984,7 +1986,7 @@ a {
     background-position: 0 30%;
   }
 }
-/* Движение блоков при скролле */
+/* Появление блоков при скролле */
 .animate-block {
   opacity: 0;
   transition: 0.6s all linear;
@@ -1996,16 +1998,16 @@ a {
   transition-delay: 0.1s;
 }
 .animate-block:nth-child(2) {
-  transition-delay: 0.3s;
+  transition-delay: 0.35s;
 }
 .animate-block:nth-child(3) {
-  transition-delay: 0.5s;
+  transition-delay: 0.55s;
 }
 .animate-block:nth-child(4) {
-  transition-delay: 0.7s;
+  transition-delay: 0.75s;
 }
 .animate-block:nth-child(5) {
-  transition-delay: 0.9s;
+  transition-delay: 0.95s;
 }
 /* Анимация иконок при наведении */
 .animate-icon:hover {
