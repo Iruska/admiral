@@ -803,17 +803,47 @@ textarea.custom-input {
   margin-right: 20px;
   display: inline-block;
   vertical-align: top;
+  position: relative;
   text-decoration: none;
   transition: 0.2s linear all;
 }
 .main-nav__link:last-child {
   margin-right: 0;
 }
-.main-nav__link:hover,
-.main-nav__link.active {
+.main-nav__link:hover > a,
+.main-nav__link.active > a {
   color: #ff9900;
 }
-.main-nav__link:active {
+.main-nav__link:active > a {
+  color: #cc7a00;
+}
+.main-nav__link:hover .main-nav__submenu {
+  display: block;
+}
+.main-nav__submenu {
+  bottom: 0;
+  width: 100%;
+  padding: 0 5px;
+  position: absolute;
+  border-radius: 2px;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+.main-nav__submenu-link {
+  list-style: none;
+}
+.main-nav__submenu-link a {
+  display: block;
+  color: #006e7b;
+}
+.main-nav__submenu-link:hover > a,
+.main-nav__submenu-link.active > a {
+  color: #ff9900;
+}
+.main-nav__submenu-link:active > a {
   color: #cc7a00;
 }
 .sub-header {

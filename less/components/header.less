@@ -31,14 +31,38 @@
 		margin-right: 20px;
 		display: inline-block;
 		vertical-align: top;
+		position: relative;
 		text-decoration: none;
 		.transition(0.2s);
 		
 		&:last-child{ margin-right: 0; }
 
-		&:hover, &.active{ color: @orange-color; }
+		&:hover > a, &.active > a{ color: @orange-color; }
+		&:active > a{ color: darken(@orange-color, 10%); }
 
-		&:active{ color: darken(@orange-color, 10%); }
+		&:hover .main-nav__submenu{ display: block; }
+	}
+
+	&__submenu{
+		bottom: 0;
+		width: 100%;
+		padding: 0 5px;
+		position: absolute;
+		border-radius: 2px;
+		transform: translateY(100%);
+		background: rgba(255, 255, 255, 0.9);
+		display: none;
+
+		&-link{
+			list-style: none;
+			a{
+				display: block;
+				color: @main-color;
+			}
+
+			&:hover > a, &.active > a{ color: @orange-color; }
+			&:active > a{ color: darken(@orange-color, 10%); }
+		}
 	}
 }
 

@@ -15,26 +15,63 @@
 
   </head>
   <body>
-
+  
     <!-- Главное меню -->
     <header class="page-header page-header--fixed">
       <div class="container row">
         <nav class="main-nav col-10">
-          <a href="index.html" class="main-nav__link active">О компании</a>
-          <a href="search.html" class="main-nav__link">Подбор теплохода</a>
-          <a href="#" class="main-nav__link">Акции</a>
-          <a href="#" class="main-nav__link">Event отдел</a>
-          <a href="portfolio.html" class="main-nav__link">Портфолио</a>
-          <a href="#" class="main-nav__link">Зеленые стоянки</a>
-          <a href="#" class="main-nav__link">Причалы</a>
-          <a href="#" class="main-nav__link">VIP</a>
-          <a href="#" class="main-nav__link">Контакты</a>
+          <ul>
+            <li class="main-nav__link active">
+              <a href="index.html">О компании</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__submenu-link">
+                  <a href="#">Описание</a>
+                </li>
+                <li class="main-nav__submenu-link">
+                  <a href="#">Услуги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__link">
+              <a href="search.html">Подбор теплохода</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__submenu-link">
+                  <a href="#">Теплоходы</a>
+                </li>
+                <li class="main-nav__submenu-link">
+                  <a href="#">Яхты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__link">
+              <a href="#">Акции</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="#">Event отдел</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="#">Зеленые стоянки</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="#">Причалы</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="#">VIP</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
         </nav>
         <div class="page-header__btn col-2">
           <a href="#" class="btn-order js-get-modal" data-modal="modal-order">Заказать теплоход</a>
         </div>
       </div>
     </header>
+
 
     <!-- Промо с логотипом и телефоном -->
     <article class="promo header-margin animate-1">
