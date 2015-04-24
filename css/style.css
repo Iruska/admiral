@@ -86,6 +86,9 @@ p {
   line-height: 18px;
   font-weight: 400;
 }
+.text--mt0 {
+  margin-top: 0;
+}
 /* Главный заголовок на странице */
 .main-title {
   color: #fff;
@@ -1129,6 +1132,56 @@ textarea.custom-input {
   transform: translateY(-50%) scale(1.5);
 }
 /* --------------------
+	Стили для контактов
+   -------------------- */
+.contact-info {
+  padding-bottom: 10px;
+}
+.contact-info .section-title {
+  margin-top: 10px;
+}
+.contact-info__item {
+  padding: 0 20px;
+  text-align: center;
+}
+.contact-info__item p,
+.contact-info__item span {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.contact-info__item span {
+  display: block;
+}
+.contact-info__image {
+  min-height: 115px;
+}
+.contact-info__head {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #006e7b;
+  margin: 15px 0 5px;
+}
+.contact-info__link {
+  font-weight: 400;
+  line-height: 18px;
+  color: #006e7b;
+  transition: 0.1s linear all;
+  border-bottom: 1px solid #006e7b;
+}
+.contact-info__link:hover {
+  border-bottom-color: transparent;
+}
+.map-block {
+  height: 620px;
+  position: relative;
+}
+.map-block .map {
+  width: 100%;
+  height: 620px;
+}
+/* --------------------
    Стили модальных окон
    -------------------- */
 /* Блок анимации */
@@ -1959,7 +2012,6 @@ a {
   animation: 15s ease infinite panorama;
 }
 .animate-parallax {
-  position: relative;
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;

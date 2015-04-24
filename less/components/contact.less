@@ -1,0 +1,55 @@
+/* --------------------
+	Стили для контактов
+   -------------------- */
+
+.contact-info{
+	padding-bottom: 10px;
+
+	.section-title{
+		margin-top: 10px;
+	}
+
+	&__item{
+		padding: 0 20px;
+		text-align: center;
+		p, span{
+			font-size: 18px;
+			line-height: 21px;
+			font-weight: 400;
+		}
+		span{ display: block; }
+	}
+
+	&__image{
+		min-height: 115px;
+	}
+
+	&__head{
+		font-size: 24px;
+		line-height: 26px;
+		font-weight: 600;
+		color: @main-color;
+		margin: 15px 0 5px;
+	}
+
+	&__link{
+		font-weight: 400;
+		line-height: 18px;
+		color: @main-color;
+		.transition(0.1s);
+		border-bottom: 1px solid @main-color;
+		&:hover{
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+.map-block{
+	height: 620px;
+	position: relative;
+
+	.map{
+		width: 100%;
+		height: 620px;
+	}
+}
