@@ -1938,7 +1938,8 @@ a {
   background-color: #ff9900;
   background-image: url(../img/icon-boat.png);
   background-repeat: no-repeat;
-  background-position: 12% 50%;
+  background-position: 12px 50%;
+  padding-left: 42px;
 }
 .info-meet__date {
   background-color: #006e7b;
