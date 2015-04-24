@@ -56,7 +56,6 @@
       </div>
     </header>
 
-
     <!-- Промо с логотипом и телефоном -->
     <article class="promo header-margin animate-1">
       <div class="container row">
@@ -106,12 +105,37 @@
       </div>
     </article>
 
+
+    <!-- Прооооообный -->
+    <section id="slide-4" class="homeSlide homeSlideTall">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-4"
+      >
+        <div class="curtainContainer">
+            <div class="copy"
+                data-bottom-top="opacity: 0"
+                data--100-bottom="opacity: 0"
+                data--280-bottom="opacity: 1;"
+                data-280-top="opacity: 1;"
+                data-106-top="opacity: 0;"
+                data-anchor-target="#slide-4 .copy"
+            >
+                <h3 class="container big-title">Откройте Москву<br/> с совершенно другого ракурса</h3>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Блок с беграундом -->
-    <section class="photo photo--bg2 animate-parallax">
+    <!-- <section class="photo photo--bg2 animate-parallax">
       <div class="container">
         <h3 class="photo__title photo__title--bottom big-title">Откройте Москву<br/> с совершенно другого ракурса</h3>
       </div>
-    </section>
+    </section> -->
 
     <!-- Как мы работаем -->
     <article class="working">
@@ -517,9 +541,12 @@
     <script src="js/libraries.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.autocomplete.js"></script>
+    <script src="js/skrollr.min.js"></script>
     <script src="js/script.js"></script>
 
     <script>
+
+    var s = skrollr.init();
 
     // анимация появления блоков
     $(window).on('scroll', function(){

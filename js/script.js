@@ -125,21 +125,21 @@ $(document).ready(function(){
 
 
     // параллакс эффект (пробный)
-    $(window).scroll(function() {
-    var st = $(this).scrollTop();
+    // $(window).scroll(function() {
+    // var st = $(this).scrollTop();
 
-      $(".photo--bg2 .photo__title").css({
-        "transform" : "translate(0%, -" + st/5 + "%"
-      });
+    //   $(".photo--bg2 .photo__title").css({
+    //     "transform" : "translate(0%, -" + st/5 + "%"
+    //   });
 
-      $(".photo--bg3 .photo__title").css({
-        "transform" : "translate(0%, " + st/8 + "%"
-      });
+    //   $(".photo--bg3 .photo__title").css({
+    //     "transform" : "translate(0%, " + st/8 + "%"
+    //   });
 
-      $(".photo--bg4 .photo__title").css({
-        "transform" : "translate(0%, -" + st/15 + "%"
-      });
+    //   $(".photo--bg4 .photo__title").css({
+    //     "transform" : "translate(0%, -" + st/15 + "%"
+    //   });
 
-    });
+    // });
 
 });
