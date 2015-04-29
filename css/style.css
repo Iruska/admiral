@@ -859,12 +859,10 @@ textarea.custom-input {
 .page-footer {
   min-width: 1200px;
   min-height: 804px;
-  padding-top: 160px;
+  overflow: hidden;
   text-align: center;
+  background-color: #20232A;
   border-top: 4px solid #006e7b;
-  background: #725653 url(../img/footer-bg.jpg) no-repeat;
-  background-position: top center;
-  background-size: cover;
 }
 .page-footer__title {
   text-align: center;
@@ -882,6 +880,10 @@ textarea.custom-input {
 /* --------------------
 	Социальные кнопки
    -------------------- */
+.social {
+  width: 340px;
+  margin: 0 auto;
+}
 .social__button {
   width: 65px;
   height: 65px;
@@ -958,7 +960,7 @@ textarea.custom-input {
   margin-left: 10px;
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../../img/vip-icon.png);
+  background-image: url(../img/vip-icon.png);
   background-repeat: no-repeat;
 }
 .product-item__title:hover {
@@ -2097,17 +2099,57 @@ a {
   min-height: 600px;
   position: relative;
 }
-.curtainContainer .copy {
+#slide-1 .bcg {
+  background-image: url('../img/bg-2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+#slide-2 .bcg {
+  background-image: url('../img/bg-3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+#slide-3 .bcg {
+  background-image: url('../img/bg-4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+#slide-4 .bcg {
+  background-image: url('../img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 804px;
+}
+#slide-5 .bcg {
+  background-image: url('../img/bg-2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+#slide-1 .copy,
+#slide-2 .copy,
+#slide-3 .copy,
+#slide-4 .copy,
+#slide-5 .copy {
   position: absolute;
   bottom: 40px;
   right: 0;
   width: 100%;
   text-align: right;
 }
-#slide-4 .bcg {
-  background-image: url('../img/bg-2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 600px;
+#slide-4 .curtainContainer {
+  min-height: 804px;
+}
+#slide-4 .copy {
+  top: 20%;
+  bottom: auto;
+  text-align: center;
 }

@@ -225,8 +225,40 @@
       </div>
     </article>
 
+    <!-- Блок с беграундом - параллакс -->
+    <footer id="slide-4" class="page-footer homeSlide homeSlideTall">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-4"
+      >
+        <div class="curtainContainer">
+            <div class="copy"
+                data-bottom-top="opacity: 0"
+                data--100-bottom="opacity: 0"
+                data--280-bottom="opacity: 1;"
+                data-anchor-target="#slide-4 .copy"
+            >
+              <div class="container">
+                <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
+                <div class="contacts">
+                  <p class="contacts__number"><span>+7 (495)</span> 722-52-24, <span>+7 (964)</span> 794-91-98 </p>
+                </div>
+                <div class="social">
+                  <a href="#" class="social__button social__button--inst">Instagramm</a>
+                  <a href="#" class="social__button social__button--lj">LiveJournal</a>
+                  <a href="#" class="social__button social__button--fb">Facebook</a>
+                  <a href="#" class="social__button social__button--vk">Вконтакте</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Подвал сайта -->
-    <footer class="page-footer animate-parallax">
+    <!-- <footer class="page-footer animate-parallax">
       <div class="container">
         <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
         <div class="contacts">
@@ -239,7 +271,7 @@
           <a href="#" class="social__button social__button--vk">Вконтакте</a>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модальное окно - Заказать теплоход -->
     <div class="modal-overlay"></div>
@@ -296,7 +328,13 @@
     <script src="js/libraries.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.autocomplete.js"></script>
+    <script src="js/skrollr.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+      // Параллакс
+      var s = skrollr.init();
+    </script>
 
   </body>
 </html>

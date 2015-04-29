@@ -106,13 +106,13 @@
     </article>
 
 
-    <!-- Прооооообный -->
-    <section id="slide-4" class="homeSlide homeSlideTall">
+    <!-- Блок с беграундом - параллакс -->
+    <section id="slide-1" class="homeSlide homeSlideTall">
       <div class="bcg"
         data-center="background-position: 50% 0px;"
         data-bottom-top="background-position: 50% 100px;"
         data-top-bottom="background-position: 50% -100px;"
-        data-anchor-target="#slide-4"
+        data-anchor-target="#slide-1"
       >
         <div class="curtainContainer">
             <div class="copy"
@@ -121,21 +121,13 @@
                 data--280-bottom="opacity: 1;"
                 data-280-top="opacity: 1;"
                 data-106-top="opacity: 0;"
-                data-anchor-target="#slide-4 .copy"
+                data-anchor-target="#slide-1 .copy"
             >
                 <h3 class="container big-title">Откройте Москву<br/> с совершенно другого ракурса</h3>
             </div>
         </div>
       </div>
     </section>
-
-
-    <!-- Блок с беграундом -->
-    <!-- <section class="photo photo--bg2 animate-parallax">
-      <div class="container">
-        <h3 class="photo__title photo__title--bottom big-title">Откройте Москву<br/> с совершенно другого ракурса</h3>
-      </div>
-    </section> -->
 
     <!-- Как мы работаем -->
     <article class="working">
@@ -184,10 +176,26 @@
       </div>
     </article>
 
-    <!-- Блок с беграундом -->
-    <section class="photo photo--bg3 animate-parallax">
-      <div class="container">
-        <h3 class="photo__title photo__title--top big-title">Огни большого города<br/> ждут вас</h3>
+    <!-- Блок с беграундом - параллакс -->
+    <section id="slide-2" class="homeSlide homeSlideTall">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-2"
+      >
+        <div class="curtainContainer">
+            <div class="copy"
+                data-bottom-top="opacity: 0"
+                data--100-bottom="opacity: 0"
+                data--280-bottom="opacity: 1;"
+                data-280-top="opacity: 1;"
+                data-106-top="opacity: 0;"
+                data-anchor-target="#slide-2 .copy"
+            >
+                <h3 class="container big-title">Огни большого города<br/> ждут вас</h3>
+            </div>
+        </div>
       </div>
     </section>
 
@@ -284,10 +292,26 @@
       </div>
     </article>
 
-    <!-- Блок с беграундом -->
-    <section class="photo photo--bg4 animate-parallax">
-      <div class="container">
-        <h3 class="photo__title photo__title--bottom big-title">Работаем<br/> круглый год</h3>
+    <!-- Блок с беграундом - параллакс -->
+    <section id="slide-3" class="homeSlide homeSlideTall">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-3"
+      >
+        <div class="curtainContainer">
+            <div class="copy"
+                data-bottom-top="opacity: 0"
+                data--100-bottom="opacity: 0"
+                data--280-bottom="opacity: 1;"
+                data-280-top="opacity: 1;"
+                data-106-top="opacity: 0;"
+                data-anchor-target="#slide-3 .copy"
+            >
+                <h3 class="container big-title">Работаем<br/> круглый год</h3>
+            </div>
+        </div>
       </div>
     </section>
 
@@ -444,8 +468,40 @@
       </div>
     </article>
 
+    <!-- Блок с беграундом - параллакс -->
+    <footer id="slide-4" class="page-footer homeSlide homeSlideTall">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-4"
+      >
+        <div class="curtainContainer">
+            <div class="copy"
+                data-bottom-top="opacity: 0"
+                data--100-bottom="opacity: 0"
+                data--280-bottom="opacity: 1;"
+                data-anchor-target="#slide-4 .copy"
+            >
+              <div class="container">
+                <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
+                <div class="contacts">
+                  <p class="contacts__number"><span>+7 (495)</span> 722-52-24, <span>+7 (964)</span> 794-91-98 </p>
+                </div>
+                <div class="social">
+                  <a href="#" class="social__button social__button--inst">Instagramm</a>
+                  <a href="#" class="social__button social__button--lj">LiveJournal</a>
+                  <a href="#" class="social__button social__button--fb">Facebook</a>
+                  <a href="#" class="social__button social__button--vk">Вконтакте</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Подвал сайта -->
-    <footer class="page-footer animate-parallax">
+    <!-- <footer class="page-footer animate-parallax">
       <div class="container">
         <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
         <div class="contacts">
@@ -458,7 +514,7 @@
           <a href="#" class="social__button social__button--vk">Вконтакте</a>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модальные окна -->
 
@@ -546,11 +602,12 @@
 
     <script>
 
-    var s = skrollr.init();
+      // Параллакс
+      var s = skrollr.init();
 
-    // анимация появления блоков
-    $(window).on('scroll', function(){
-      var scrollpos = $(this).scrollTop() + ($(window).height()/2+200);
+      // анимация появления блоков
+      $(window).on('scroll', function(){
+        var scrollpos = $(this).scrollTop() + ($(window).height()/2+200);
 
         if ( $('#js-animate-1') && $('#js-animate-2') && $('#js-animate-3') && $('#js-animate-4') && $('#js-animate-5') && $('#js-animate-6') && $('#js-animate-7') && $('#js-animate-8') ){
 
@@ -580,6 +637,8 @@
           }
         }
       });
+
+      // $('body').css("height", "auto");
 
     </script>
   </body>
