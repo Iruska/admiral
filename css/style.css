@@ -2124,8 +2124,8 @@ a {
   background-image: url('../img/footer-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  min-height: 804px;
+  background-size: 110%;
+  min-height: 780px;
 }
 #slide-5 .bcg {
   background-image: url('../img/bg-2.jpg');
@@ -2144,9 +2144,6 @@ a {
   right: 0;
   width: 100%;
   text-align: right;
-}
-#slide-4 .curtainContainer {
-  min-height: 780px;
 }
 #slide-4 .copy {
   top: 20%;
