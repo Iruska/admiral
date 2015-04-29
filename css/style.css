@@ -858,7 +858,7 @@ textarea.custom-input {
    --------------------------- */
 .page-footer {
   min-width: 1200px;
-  min-height: 804px;
+  min-height: 780px;
   overflow: hidden;
   text-align: center;
   background-color: #20232A;
@@ -1323,7 +1323,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: auto!important;
 }
 ul,
 h1 {
@@ -2144,6 +2144,9 @@ a {
   right: 0;
   width: 100%;
   text-align: right;
+}
+#slide-4 .curtainContainer {
+  min-height: 780px;
 }
 #slide-4 .copy {
   top: 20%;
