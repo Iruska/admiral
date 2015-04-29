@@ -858,10 +858,8 @@ textarea.custom-input {
    --------------------------- */
 .page-footer {
   min-width: 1200px;
-  min-height: 780px;
   overflow: hidden;
   text-align: center;
-  background-color: #20232A;
   border-top: 4px solid #006e7b;
 }
 .page-footer__title {
@@ -2099,6 +2097,10 @@ a {
   min-height: 600px;
   position: relative;
 }
+.homeSlide {
+  width: 100%;
+  min-width: 1200px;
+}
 #slide-1 .bcg {
   background-image: url('../img/bg-2.jpg');
   background-repeat: no-repeat;
@@ -2121,11 +2123,12 @@ a {
   min-height: 600px;
 }
 #slide-4 .bcg {
+  background-color: #20232A;
   background-image: url('../img/footer-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 110%;
-  min-height: 780px;
+  background-size: cover;
+  min-height: 800px;
 }
 #slide-5 .bcg {
   background-image: url('../img/bg-2.jpg');
