@@ -123,23 +123,6 @@ $(document).ready(function(){
       lookup: ['Яхта Palma', 'Теплоход Radisson', 'Теплоход Баттерфляй'] // Список вариантов для локального автозаполнения
     });
 
-
-    // параллакс эффект (пробный)
-    // $(window).scroll(function() {
-    // var st = $(this).scrollTop();
-
-    //   $(".photo--bg2 .photo__title").css({
-    //     "transform" : "translate(0%, -" + st/5 + "%"
-    //   });
-
-    //   $(".photo--bg3 .photo__title").css({
-    //     "transform" : "translate(0%, " + st/8 + "%"
-    //   });
-
-    //   $(".photo--bg4 .photo__title").css({
-    //     "transform" : "translate(0%, -" + st/15 + "%"
-    //   });
-
-    // });
+    var s = skrollr.init(); 
 
 });

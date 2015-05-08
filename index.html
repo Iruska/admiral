@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!-- Стили -->
     <link rel="stylesheet" href="css/style-dist.css" />
+    <!-- <link rel="stylesheet" href="mobile.css" media="handheld,only screen and (max-device-width:640px)"/> -->
 
     <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
 
@@ -129,6 +130,13 @@
       </div>
     </section>
 
+    <!-- Блок с беграундом -->
+    <section class="photo photo--bg2 photo--mobile animate-parallax">
+      <div class="container">
+        <h3 class="photo__title photo__title--bottom big-title">Откройте Москву<br/> с совершенно другого ракурса</h3>
+      </div>
+    </section>
+
     <!-- Как мы работаем -->
     <article class="working">
       <div class="container">
@@ -196,6 +204,13 @@
                 <h3 class="container big-title">Огни большого города<br/> ждут вас</h3>
             </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Блок с беграундом -->
+    <section class="photo photo--bg3 photo--mobile animate-parallax">
+      <div class="container">
+        <h3 class="photo__title photo__title--top big-title">Огни большого города<br/> ждут вас</h3>
       </div>
     </section>
 
@@ -312,6 +327,13 @@
                 <h3 class="container big-title">Работаем<br/> круглый год</h3>
             </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Блок с беграундом -->
+    <section class="photo photo--bg4 photo--mobile animate-parallax">
+      <div class="container">
+        <h3 class="photo__title photo__title--bottom big-title">Работаем<br/> круглый год</h3>
       </div>
     </section>
 
@@ -501,7 +523,7 @@
     </footer>
 
     <!-- Подвал сайта -->
-    <!-- <footer class="page-footer animate-parallax">
+    <footer class="page-footer page-footer--mobile animate-parallax">
       <div class="container">
         <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
         <div class="contacts">
@@ -514,7 +536,7 @@
           <a href="#" class="social__button social__button--vk">Вконтакте</a>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Модальные окна -->
 
@@ -603,7 +625,7 @@
     <script>
 
       // Параллакс
-      var s = skrollr.init();
+      // var s = skrollr.init();
 
       // анимация появления блоков
       $(window).on('scroll', function(){
