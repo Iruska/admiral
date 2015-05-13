@@ -79,40 +79,9 @@
       <div class="container">
         <h2 class="section-title">Поиск и подбор теплохода</h2>
 
-        <form action="">
+        <form action="#" method="post">
           <fieldset class="form-typeboat">
             <p class="selection__text">Выберите тип теплохода</p>
-            <!-- Иконки бекграундом -->
-            <!-- <ul class="row--inline">
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="guest50">
-                <label for="guest50">до 50 гостей</label>
-              </li>
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="guest100">
-                <label for="guest100">до 100 гостей</label>
-              </li>
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="guest500">
-                <label for="guest500">от 100 до 500 гостей</label>
-              </li>
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="vip-boat">
-                <label for="vip-boat">VIP теплоходы</label>
-              </li>
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="panoram-boat">
-                <label for="panoram-boat">Панорамные</label>
-              </li>
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="mini-cruise">
-                <label for="mini-cruise">Мини-круизы</label>
-              </li>
-              <li class="form-typeboat__column">
-                <input type="checkbox" name="type-boat" class="custom-type-button" id="yacht">
-                <label for="yacht">Яхты</label>
-              </li>
-            </ul> -->
 
             <ul class="row--inline">
               <li class="form-typeboat__column">
@@ -180,11 +149,11 @@
     </section>
 
     <!-- Форма поиска -->
-    <section class="form-search">
+    <div class="form-search">
       <div class="container">
         <a href="#" class="search-link js-search-link">Расширенный поиск по параметрам</a>
         <!-- Сама форма -->
-        <form action="">
+        <form action="#" method="post">
           <fieldset class="form-search__wrapper">
             <div class="row">
               <div class="col-3">
@@ -260,7 +229,7 @@
           <button class="btn btn--bottom">Показать <span>145</span> теплоходов</button>
         </form>
       </div>
-    </section>
+    </div>
 
     <!-- Блок с беграундом - параллакс -->
     <section id="slide-5" class="homeSlide homeSlideTall">
@@ -286,11 +255,11 @@
     </section>
 
     <!-- Блок с беграундом -->
-    <!-- <section class="photo photo--bg2 animate-parallax">
+    <section class="photo photo--bg2 photo--mobile animate-parallax">
       <div class="container">
         <h3 class="photo__title photo__title--bottom big-title">Акции</h3>
       </div>
-    </section> -->
+    </section>
 
     <!-- Дополнительные услуги -->
     <article class="options">
@@ -298,7 +267,7 @@
         <h2 class="section-title">Дополнительные услуги</h2>
         <p class="options__text">На всех наших теплоходах мы предлагаем широкий спектр дополнительных услуг. Нажмите на иконку, чтобы узнать подробнее</p>
         
-        <section class="row--inline">
+        <div class="row--inline">
           <div class="options__item">
             <a href="#" class="options__item__img animate-icon">
               <img src="img/service-item-1.png" height="97" width="110" alt="">
@@ -331,35 +300,35 @@
           </div>
           <div class="options__item">
             <a href="#" class="options__item__img animate-icon">
-              <img src="img/service-item-6.png" height="83" width="79">
+              <img src="img/service-item-6.png" height="83" width="79" alt="">
             </a>
             <p>Фейрверк</p>
           </div>
           <div class="options__item">
             <a href="#" class="options__item__img animate-icon">
-              <img src="img/service-item-7.png" height="88" width="88">
+              <img src="img/service-item-7.png" height="88" width="88" alt="">
             </a>
             <p>Тимбилдинг</p>
           </div>
           <div class="options__item">
             <a href="#" class="options__item__img animate-icon">
-              <img src="img/service-item-8.png" height="65" width="93">
+              <img src="img/service-item-8.png" height="65" width="93" alt="">
             </a>
             <p>Фотосъемка</p>
           </div>
           <div class="options__item">
             <a href="#" class="options__item__img animate-icon">
-              <img src="img/service-item-9.png" height="77" width="86">
+              <img src="img/service-item-9.png" height="77" width="86" alt="">
             </a>
             <p>Аренда мебели</p>
           </div>
           <div class="options__item">
             <a href="#" class="options__item__img animate-icon">
-              <img src="img/service-item-10.png" height="85" width="72">
+              <img src="img/service-item-10.png" height="85" width="72" alt="">
             </a>
             <p>Шоу-программа</p>
           </div>
-        </section>
+        </div>
 
       </div>
     </article>
@@ -377,10 +346,12 @@
           </a>
           <div class="product-item__desc">
             <a href="#" class="product-item__title">Яхта Palma De Сочи</a>
-            <table class="product-item__table" cellpadding="0" cellspacing="0">
+            <table class="product-item__table">
               <thead>
-                <td>Вместимость теплохода</td>
-                <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                <tr>
+                  <td>Вместимость теплохода</td>
+                  <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                </tr>
               </thead>
               <tr>
                 <td></td>
@@ -416,8 +387,10 @@
                 <td></td>
               </tr>
               <tfoot>
-                <td>Организации питания на борту</td>
-                <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                <tr>
+                  <td>Организации питания на борту</td>
+                  <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                </tr>
               </tfoot>
             </table>
             <a href="#" class="btn-more">Подробнее</a>
@@ -427,14 +400,16 @@
         <!-- Один товар -->
         <div class="product-item row">
           <a href="#" class="product-item__img img-shadow">
-            <img src="img/item-2.jpg" height="224" width="321">
+            <img src="img/item-2.jpg" height="224" width="321" alt="">
           </a>
           <div class="product-item__desc">
             <a href="#" class="product-item__title">Теплоходы Radisson (Баттерфляй, Примавера, Бьюти, Монтана, Феличита)</a>
-            <table class="product-item__table" cellpadding="0" cellspacing="0">
+            <table class="product-item__table">
               <thead>
-                <td>Вместимость теплохода</td>
-                <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                <tr>
+                  <td>Вместимость теплохода</td>
+                  <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                </tr>
               </thead>
               <tr>
                 <td></td>
@@ -470,8 +445,10 @@
                 <td></td>
               </tr>
               <tfoot>
-                <td>Организации питания на борту</td>
-                <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                <tr>
+                  <td>Организации питания на борту</td>
+                  <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                </tr>
               </tfoot>
             </table>
             <a href="#" class="btn-more">Подробнее</a>
@@ -485,10 +462,12 @@
           </a>
           <div class="product-item__desc">
             <a href="#" class="product-item__title">Яхта Palma De Сочи</a>
-            <table class="product-item__table" cellpadding="0" cellspacing="0">
+            <table class="product-item__table">
               <thead>
-                <td>Вместимость теплохода</td>
-                <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                <tr>
+                  <td>Вместимость теплохода</td>
+                  <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                </tr>
               </thead>
               <tr>
                 <td></td>
@@ -524,8 +503,10 @@
                 <td></td>
               </tr>
               <tfoot>
-                <td>Организации питания на борту</td>
-                <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                <tr>
+                  <td>Организации питания на борту</td>
+                  <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                </tr>
               </tfoot>
             </table>
             <a href="#" class="btn-more">Подробнее</a>

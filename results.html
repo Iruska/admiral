@@ -75,11 +75,11 @@
     </section>
 
     <!-- Форма поиска -->
-    <section class="form-search">
+    <div class="form-search">
       <div class="container">
         <a href="#" class="search-link js-search-link">Изменить условия поиска</a>
         <!-- Сама форма -->
-        <form action="">
+        <form action="#" method="post">
           <fieldset class="form-search__wrapper">
 
             <div class="row row--input-search">
@@ -182,12 +182,12 @@
           <button class="btn btn--bottom">Показать <span>145</span> теплоходов</button>
         </form>
       </div>
-    </section>
+    </div>
 
     <!-- Результаты поиска -->
-    <section class="results">
+    <div class="results">
       <div class="container">
-        <form action="">
+        <form action="#" method="post">
           <p class="sorting">Сортировать результаты по 
           <a href="#" class="sorting__link active">названию</a> , 
           <a href="#" class="sorting__link">стоимости</a> , 
@@ -201,10 +201,12 @@
           </a>
           <div class="product-item__desc">
             <a href="#" class="product-item__title product-item__title--vip"><span>Яхта Palma De Сочи</span></a>
-            <table class="product-item__table" cellpadding="0" cellspacing="0">
+            <table class="product-item__table">
               <thead>
-                <td>Вместимость теплохода</td>
-                <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                <tr>
+                  <td>Вместимость теплохода</td>
+                  <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                </tr>
               </thead>
               <tr>
                 <td></td>
@@ -240,8 +242,10 @@
                 <td></td>
               </tr>
               <tfoot>
-                <td>Организации питания на борту</td>
-                <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                <tr>
+                  <td>Организации питания на борту</td>
+                  <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                </tr>
               </tfoot>
             </table>
             <a href="#" class="btn-more">Подробнее</a>
@@ -251,14 +255,16 @@
         <!-- Один товар -->
         <div class="product-item row">
           <a href="#" class="product-item__img img-shadow">
-            <img src="img/item-2.jpg" height="224" width="321">
+            <img src="img/item-2.jpg" height="224" width="321" alt="">
           </a>
           <div class="product-item__desc">
             <a href="#" class="product-item__title"><span>Теплоходы Radisson (Баттерфляй, Примавера, Бьюти, Монтана, Феличита)</span></a>
-            <table class="product-item__table" cellpadding="0" cellspacing="0">
+            <table class="product-item__table">
               <thead>
-                <td>Вместимость теплохода</td>
-                <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                <tr>
+                  <td>Вместимость теплохода</td>
+                  <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                </tr>
               </thead>
               <tr>
                 <td></td>
@@ -294,8 +300,10 @@
                 <td></td>
               </tr>
               <tfoot>
-                <td>Организации питания на борту</td>
-                <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                <tr>
+                  <td>Организации питания на борту</td>
+                  <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                </tr>
               </tfoot>
             </table>
             <a href="#" class="btn-more">Подробнее</a>
@@ -309,10 +317,12 @@
           </a>
           <div class="product-item__desc">
             <a href="#" class="product-item__title"><span>Яхта Palma De Сочи</span></a>
-            <table class="product-item__table" cellpadding="0" cellspacing="0">
+            <table class="product-item__table">
               <thead>
-                <td>Вместимость теплохода</td>
-                <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                <tr>
+                  <td>Вместимость теплохода</td>
+                  <td colspan="8">банкет — 80 человек, фуршет — 150 человек</td>
+                </tr>
               </thead>
               <tr>
                 <td></td>
@@ -348,8 +358,10 @@
                 <td></td>
               </tr>
               <tfoot>
-                <td>Организации питания на борту</td>
-                <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                <tr>
+                  <td>Организации питания на борту</td>
+                  <td colspan="8">банкет от 4000 руб./чел., фуршет от 3500 руб./чел. </td>
+                </tr>
               </tfoot>
             </table>
             <a href="#" class="btn-more">Подробнее</a>
@@ -359,7 +371,7 @@
         <a href="#" class="btn btn--bottom">Показать еще 10 из 80</a>
 
       </div>
-    </section>
+    </div>
 
     <!-- Блок с беграундом - параллакс -->
     <footer id="slide-4" class="page-footer homeSlide homeSlideTall">
