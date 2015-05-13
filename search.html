@@ -69,7 +69,7 @@
         <div class="contacts">
           <p class="contacts__number contacts__number--orange"><span>+7 (495)</span> 722-52-24</p>
           <p class="contacts__number contacts__number--orange"><span>+7 (964)</span> 794-91-98</p>
-          <a href="#" class="call-link call-link--orange">Заказать звонок</a>
+          <a href="#" class="call-link call-link--orange js-get-modal" data-modal="modal-callback">Заказать звонок</a>
         </div>
       </div>
     </section>
@@ -542,14 +542,14 @@
       <div class="bcg"
         data-center="background-position: 50% 0px;"
         data-bottom-top="background-position: 50% 100px;"
-        data-top-bottom="background-position: 50% -100px;"
+        data-top-bottom="background-position: 50% 0px;"
         data-anchor-target="#slide-4"
       >
         <div class="curtainContainer">
             <div class="copy"
                 data-bottom-top="opacity: 0"
-                data--100-bottom="opacity: 0"
-                data--280-bottom="opacity: 1;"
+                data--100-bottom="opacity: 1;"
+                data-100-top="opacity: 1;"
                 data-anchor-target="#slide-4 .copy"
             >
               <div class="container">
@@ -570,7 +570,7 @@
     </footer>
 
     <!-- Подвал сайта -->
-    <!-- <footer class="page-footer animate-parallax">
+    <footer class="page-footer page-footer--mobile animate-parallax">
       <div class="container">
         <h4 class="page-footer__title big-title">Официальная аренда теплоходов<br/> в Москве</h4>
         <div class="contacts">
@@ -583,7 +583,9 @@
           <a href="#" class="social__button social__button--vk">Вконтакте</a>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <!-- Модальные окна -->
 
     <!-- Модальное окно - Заказать теплоход -->
     <div class="modal-overlay"></div>
@@ -631,6 +633,30 @@
             <textarea class="custom-input" id="comment-2"></textarea>
 
             <button type="submit" class="custom-button">Отправить заявку</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно - Заказать обратный звонок -->
+    <div class="modal-overlay"></div>
+    <div class="modal modal-callback">
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <a href="#" class="modal__close js-close-modal">Закрыть окно</a>
+          <h2 class="section-title modal__title">Заказать обратный звонок</h2>
+
+          <form action="#" method="post">
+            <label for="call-name">Представьтесь, пожалуйста</label>
+            <input type="text" class="custom-input" id="call-name" required>
+
+            <label for="call-telephone">Ваше номер телефона</label>
+            <input type="text" class="custom-input" id="call-telephone" required>
+
+            <p class="field-required">Оба поля обязательны для заполнения, спасибо</p>
+
+            <button type="submit" class="custom-button">Позвоните мне</button>
           </form>
 
         </div>
