@@ -1339,6 +1339,9 @@ a {
   border: none;
   outline: none;
 }
+table {
+  border-collapse: collapse;
+}
 /* --------------------
 	Промо блок с лого
    -------------------- */
